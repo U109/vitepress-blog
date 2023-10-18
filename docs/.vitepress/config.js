@@ -5,7 +5,7 @@ export default {
 	lang: 'zh-CN',
 	title: 'YCBlog~', //站点标题
 	description: 'yc的博客~', //用于搜索引擎抓取摘要
-	base: '/yc-blog/',
+	base: '/',
 	markdown: {
 		// lineNumbers: true,//代码块启用行号
 		// theme:'vitesse-dark'
