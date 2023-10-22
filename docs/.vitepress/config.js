@@ -3,15 +3,15 @@ import navbar from './config/navbar'
 
 export default {
 	lang: 'zh-CN',
-	title: 'YCBlog~', //站点标题
-	description: 'yc的博客~', //用于搜索引擎抓取摘要
+	title: 'ZZZBlog', //站点标题
+	description: 'zzz的博客', //用于搜索引擎抓取摘要
 	base: '/',
 	markdown: {
 		// lineNumbers: true,//代码块启用行号
 		// theme:'vitesse-dark'
 	},
 	themeConfig: {
-		siteTitle: 'Cheng',
+		siteTitle: 'Zhen',
 		logo: '/darth_vader.png',
 		/* 头部导航 */
 		nav: navbar,
