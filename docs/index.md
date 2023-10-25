@@ -1,30 +1,42 @@
 ---
 layout: home
 
-title: ycBlog
+title: ZBlog
 titleTemplate: 博客笔记
 hero:
-  name: 永程的笔记
+  name: 张忠振的笔记
   text: Every second counts
-  tagline: web前端程序猿
+  tagline: 一个程序员的笔记
   image:
-    src: /hero.png
-    alt: yc
+    src: /index/index_title.png
+    alt: zzz
   actions:
     - theme: brand
       text: 开  始
       link: /js基础/原型和原型链
-    # - theme: alt
-    #   text: 在 Gitee 上查看
-    #   link: https://gitee.com/yc_zhou
+    - theme: alt
+      text: 在 Github 上查看
+      link: https://github.com/U109/U109.github.io.git
+    - theme: alt
+      text: 关于我
+      link: /about/about.md
 
 features:
   - icon: ✒️
     title: 学习笔记
-    details: nodejs、webpack、react、vue...
-  - icon: 📚
+    details: Java、Vue...
+  - icon: 📑
     title: 知识整理
-    details: 开发工具使用、框架配置、js基础
+    details: 开发工具使用、框架配置
+  - icon: 📚
+    title: 书籍收藏
+    details: 开发工具使用、框架配置
+  - icon: 📡
+    title: 网站推荐
+    details: 收集有趣的网站
+  - icon: 🛠️
+    title: 项目实践
+    details: 做过的项目解析
   - icon: 📡
     title: 其它
     details: 网站推荐...
