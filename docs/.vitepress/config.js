@@ -26,7 +26,6 @@ export default {
         ],
         /* 侧边导航 */
         sidebar,
-
         docFooter: {
             prev: '上一页',
             next: '下一页',
