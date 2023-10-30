@@ -16,13 +16,13 @@ export default {
     },
     themeConfig: {
         siteTitle: 'Zhen',
-        logo: '/darth_vader.png',
+        logo: '../public/数据库/MySQL/img.png',
         /* 头部导航 */
         nav: navbar,
         /* 链接 */
         socialLinks: [
             // | 'discord'| 'facebook'| 'github'| 'instagram'| 'linkedin'| 'slack'| 'twitter'| 'youtube'
-            {icon: 'github', link: 'https://github.com/U109'}
+            {icon: 'github', link: 'https://github.com/U109'},
         ],
         /* 侧边导航 */
         sidebar,
