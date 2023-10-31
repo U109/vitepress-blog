@@ -36,5 +36,24 @@ export default {
                 {text: '总结', link: '/数据库/MySQL/InnoDB数据页结构/总结'},
             ],
         },
+        {
+            text: 'B+树索引',
+            collapsed: true,
+            items: [
+                {text: '没有索引的查找', link: '/数据库/MySQL/B+树索引/没有索引的查找'},
+                {text: '索引', link: '/数据库/MySQL/B+树索引/索引'},
+            ],
+        },
+        {
+            text: 'B+树索引的使用',
+            collapsed: true,
+            items: [
+                {text: '索引的代价', link: '/数据库/MySQL/B+树索引的使用/索引的代价'},
+                {text: 'B+树索引适用的条件', link: '/数据库/MySQL/B+树索引的使用/B+树索引适用的条件'},
+                {text: '回表的代价', link: '/数据库/MySQL/B+树索引的使用/回表的代价'},
+                {text: '如何挑选索引', link: '/数据库/MySQL/B+树索引的使用/如何挑选索引'},
+                {text: '总结', link: '/数据库/MySQL/B+树索引的使用/总结'},
+            ],
+        },
     ],
 }

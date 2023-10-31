@@ -21,7 +21,7 @@ export default {
     },
     themeConfig: {
         siteTitle: 'Zhen',
-        logo: '../public/数据库/MySQL/img.png',
+        logo: '../public/数据库/MySQL/img-14.png',
         /* 头部导航 */
         nav: navbar,
         /* 链接 */
