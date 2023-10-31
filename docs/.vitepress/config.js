@@ -7,6 +7,11 @@ export default {
     title: 'ZBlog', //站点标题
     description: '张忠振的博客', //用于搜索引擎抓取摘要
     base: '/',
+    head: [
+        ['link', {rel: 'preconnect', href: 'https://fonts.googleapis.com'}],
+        ['link', {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''}],
+        ['link', {href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet'}],
+    ],
     markdown: {
         // lineNumbers: true,//代码块启用行号
         // theme:'vitesse-dark'
@@ -26,6 +31,10 @@ export default {
         ],
         /* 侧边导航 */
         sidebar,
+        outline: {
+            level: [2,6],
+            label: '目录',
+        },
         docFooter: {
             prev: '上一页',
             next: '下一页',
