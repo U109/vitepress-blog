@@ -51,28 +51,28 @@ aside: false
 <div class="book-container">
   <div class="book-card">
     <a href="/书籍下载/Java/pdf/Java NIO 中文版.pdf" download style="text-decoration: none;color: inherit; ">
-        <img src="/书籍下载/Java/images/Java NIO.png" alt="Book 1" class="book-image">
+        <img src="/书籍下载/Java/images/Java NIO.jpg" alt="Book 1" class="book-image">
         <div class="book-title">Java NIO 中文版</div>
         <div class="book-author">Author 1</div>
     </a>
   </div>
  <div class="book-card">
     <a href="/书籍下载/Java/pdf/Java 多线程编程核心技术.pdf" download style="text-decoration: none;color: inherit; ">
-        <img src="/书籍下载/Java/images/Java多线程编程核心技术.png" alt="Book 1" class="book-image">
+        <img src="/书籍下载/Java/images/Java多线程编程核心技术.jpg" alt="Book 1" class="book-image">
         <div class="book-title">Java 多线程编程核心技术</div>
         <div class="book-author">Author 1</div>
     </a>
   </div>
  <div class="book-card">
     <a href="/书籍下载/Java/pdf/Java工程师修炼之道.pdf" download style="text-decoration: none;color: inherit; ">
-        <img src="/书籍下载/Java/images/Java工程师修炼之道.png" alt="Book 1" class="book-image">
+        <img src="/书籍下载/Java/images/Java工程师修炼之道.jpg" alt="Book 1" class="book-image">
         <div class="book-title">Java 多线程编程核心技术</div>
         <div class="book-author">Author 1</div>
     </a>
   </div>
  <div class="book-card">
     <a href="/书籍下载/Java/pdf/Java性能调优指南.pdf" download style="text-decoration: none;color: inherit; ">
-        <img src="/书籍下载/Java/images/Java性能调优指南.png" alt="Book 1" class="book-image">
+        <img src="/书籍下载/Java/images/Java性能调优指南.jpg" alt="Book 1" class="book-image">
         <div class="book-title">Java 多线程编程核心技术</div>
         <div class="book-author">Author 1</div>
     </a>
