@@ -8,4 +8,17 @@ export default [
       },
     ],
   },
+  {
+    text: "书籍下载",
+    items: [
+      {
+        text: "Java",
+        link: "/书籍下载/Java/Java",
+      },
+      {
+        text: "网络",
+        link: "/书籍下载/网络/网络",
+      },
+    ],
+  },
 ];

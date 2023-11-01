@@ -55,5 +55,32 @@ export default {
                 {text: '总结', link: '/数据库/MySQL/B+树索引的使用/总结'},
             ],
         },
+        {
+            text: 'MySQL的数据目录',
+            collapsed: true,
+            items: [
+                {text: '数据库和文件系统的关系', link: '/数据库/MySQL/MySQL的数据目录/数据库和文件系统的关系'},
+                {text: 'MySQL数据目录', link: '/数据库/MySQL/MySQL的数据目录/MySQL数据目录'},
+                {text: '数据目录的结构', link: '/数据库/MySQL/MySQL的数据目录/数据目录的结构'},
+                {text: '文件系统对数据库的影响', link: '/数据库/MySQL/MySQL的数据目录/文件系统对数据库的影响'},
+                {text: 'MySQL系统数据库简介', link: '/数据库/MySQL/MySQL的数据目录/MySQL系统数据库简介'},
+            ],
+        },
     ],
+    '/书籍下载/': [
+        {
+            text: 'Java',
+            collapsed: true,
+            items: [
+                {text: 'Java', link: '/书籍下载/Java/Java'},
+            ],
+        },
+        {
+            text: '网络',
+            collapsed: true,
+            items: [
+                {text: 'HTTP', link: '/书籍下载/网络/网络'},
+            ],
+        },
+    ]
 }
