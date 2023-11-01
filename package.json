@@ -8,6 +8,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "medium-zoom": "^1.0.8",
     "vitepress-markdown-timeline": "^1.2.1"
   }
 }

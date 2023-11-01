@@ -73,8 +73,18 @@ export default {
                 {text: '回忆一些旧知识', link: '/数据库/MySQL/InnoDB的表空间/回忆一些旧知识'},
                 {text: '独立表空间结构', link: '/数据库/MySQL/InnoDB的表空间/独立表空间结构'},
                 {text: '系统表空间', link: '/数据库/MySQL/InnoDB的表空间/系统表空间'},
+                {text: '总结', link: '/数据库/MySQL/InnoDB的表空间/总结'},
             ],
         },
+    ],
+    '/框架配置/': [
+        {
+            text: 'VitePress',
+            // collapsed: true,
+            items: [
+                {text: '图片缩放功能', link: '/框架配置/VitePress/图片缩放功能'},
+            ],
+        }
     ],
     '/书籍下载/': [
         {

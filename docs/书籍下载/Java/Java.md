@@ -50,7 +50,7 @@ aside: false
 
 <div class="book-container">
   <div class="book-card">
-    <a href="/书籍下载/Java/pdf/Java NIO 中文版.pdf"  style="text-decoration: none;color: inherit; ">
+    <a href="/书籍下载/Java/pdf/Java NIO 中文版.pdf" download  style="text-decoration: none;color: inherit; ">
         <img src="/书籍下载/Java/images/Java NIO.jpg" alt="Book 1" class="book-image">
         <div class="book-title">Java NIO 中文版</div>
         <div class="book-author">O’Reilly</div>

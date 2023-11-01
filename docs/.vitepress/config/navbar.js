@@ -9,6 +9,15 @@ export default [
     ],
   },
   {
+    text: "框架配置",
+    items: [
+      {
+        text: "VitePress",
+        link: "/框架配置/VitePress/图片缩放功能",
+      },
+    ],
+  },
+  {
     text: "书籍下载",
     items: [
       {
