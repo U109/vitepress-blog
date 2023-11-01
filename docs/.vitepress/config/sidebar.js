@@ -66,6 +66,15 @@ export default {
                 {text: 'MySQL系统数据库简介', link: '/数据库/MySQL/MySQL的数据目录/MySQL系统数据库简介'},
             ],
         },
+        {
+            text: 'InnoDB的表空间',
+            collapsed: true,
+            items: [
+                {text: '回忆一些旧知识', link: '/数据库/MySQL/InnoDB的表空间/回忆一些旧知识'},
+                {text: '独立表空间结构', link: '/数据库/MySQL/InnoDB的表空间/独立表空间结构'},
+                {text: '系统表空间', link: '/数据库/MySQL/InnoDB的表空间/系统表空间'},
+            ],
+        },
     ],
     '/书籍下载/': [
         {
