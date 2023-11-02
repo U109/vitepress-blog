@@ -76,6 +76,38 @@ export default {
                 {text: '总结', link: '/数据库/MySQL/InnoDB的表空间/总结'},
             ],
         },
+        {
+            text: '单表访问方法',
+            collapsed: true,
+            items: [
+                {text: '访问方法（access method）的概念', link: '/数据库/MySQL/单表访问方法/访问方法（access method）的概念'},
+                {text: 'const', link: '/数据库/MySQL/单表访问方法/const'},
+                {text: 'ref', link: '/数据库/MySQL/单表访问方法/ref'},
+                {text: 'ref_or_null', link: '/数据库/MySQL/单表访问方法/ref_or_null'},
+                {text: 'range', link: '/数据库/MySQL/单表访问方法/range'},
+                {text: 'index', link: '/数据库/MySQL/单表访问方法/index'},
+                {text: 'all', link: '/数据库/MySQL/单表访问方法/all'},
+                {text: '注意事项', link: '/数据库/MySQL/单表访问方法/注意事项'},
+            ],
+        },
+        {
+            text: '连接的原理',
+            collapsed: true,
+            items: [
+                {text: '连接简介', link: '/数据库/MySQL/连接的原理/连接简介'},
+                {text: '连接的原理', link: '/数据库/MySQL/连接的原理/连接的原理'},
+            ],
+        },
+        {
+            text: 'MySQL基于成本的优化',
+            collapsed: true,
+            items: [
+                {text: '什么是成本', link: '/数据库/MySQL/MySQL基于成本的优化/什么是成本'},
+                {text: '单表查询的成本', link: '/数据库/MySQL/MySQL基于成本的优化/单表查询的成本'},
+                {text: '连接查询的成本', link: '/数据库/MySQL/MySQL基于成本的优化/连接查询的成本'},
+                {text: '调节成本常数', link: '/数据库/MySQL/MySQL基于成本的优化/调节成本常数'},
+            ],
+        },
     ],
     '/框架配置/': [
         {
