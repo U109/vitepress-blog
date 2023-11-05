@@ -5,6 +5,7 @@ import {onMounted, watch, nextTick} from 'vue'
 import {useRoute} from 'vitepress'
 import mediumZoom from 'medium-zoom'
 import './global.css'
+import './style/var.css'
 
 export default {
     ...DefaultTheme,
