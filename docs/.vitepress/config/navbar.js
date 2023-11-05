@@ -3,7 +3,37 @@ export default [
         text: "首页",
         link: "/",
     },
-
+    {
+        text: "Java系列",
+        items: [
+            {
+                text: "Spring",
+                items: [
+                    {
+                        text: "SpringBoot",
+                        link: "/数据库/书籍鉴赏/MySQL是怎样运行的/字符集和比较规则/字符集和比较规则简介",
+                    },
+                    {
+                        text: "SpringCloud",
+                        link: "/数据库/书籍鉴赏/MySQL是怎样运行的/字符集和比较规则/字符集和比较规则简介",
+                    },
+                ],
+            },
+            {
+                text: "Netty",
+                items: [
+                    {
+                        text: "Netty入门与实战",
+                        link: "/数据库/书籍鉴赏/MySQL是怎样运行的/字符集和比较规则/字符集和比较规则简介",
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        text: "分布式框架",
+        link: "/数据库/书籍鉴赏/",
+    },
     {
         text: "数据库",
         items: [
@@ -45,7 +75,7 @@ export default [
         text: "框架配置",
         items: [
             {
-                text: "VitePress",
+                text: "VitePress博客",
                 link: "/框架配置/VitePress/图片缩放功能",
             },
         ],

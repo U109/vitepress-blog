@@ -5,7 +5,7 @@ import timelinePlugin from "vitepress-markdown-timeline";
 export default {
     lang: 'zh-CN',
     title: 'ZBlog', //站点标题
-    description: '张忠振的博客', //用于搜索引擎抓取摘要
+    description: '张忠振的博客:Java、框架、数据库', //用于搜索引擎抓取摘要
     base: '/',
     head: [
         ['link', {rel: 'preconnect', href: 'https://fonts.googleapis.com'}],
@@ -21,7 +21,7 @@ export default {
     },
     themeConfig: {
         siteTitle: 'Zhen',
-        logo: '数据库/MySQL/img-14.png',
+        logo: 'logo.jpg',
         /* 头部导航 */
         nav: navbar,
         /* 链接 */
