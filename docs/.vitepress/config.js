@@ -8,6 +8,7 @@ export default {
     description: '张忠振的博客:Java、框架、数据库', //用于搜索引擎抓取摘要
     base: '/',
     head: [
+        ['link', {rel: 'shortcut icon', type: "image/x-icon", href: `/logo.jpg`}],
         ['link', {rel: 'preconnect', href: 'https://fonts.googleapis.com'}],
         ['link', {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''}],
         ['link', {href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet'}],
@@ -32,7 +33,7 @@ export default {
         /* 侧边导航 */
         sidebar,
         outline: {
-            level: [2,6],
+            level: [2, 6],
             label: '目录',
         },
         docFooter: {
