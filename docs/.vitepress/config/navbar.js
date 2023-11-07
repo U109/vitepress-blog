@@ -49,6 +49,20 @@ export default [
         ],
     },
     {
+        text: "实战项目",
+        items: [
+            {
+                text: "Netty",
+                items: [
+                    {
+                        text: "仿写微信IM即时通讯系统",
+                        link: "/实战项目/Netty/仿写微信IM即时通讯系统/仿微信IM系统简介",
+                    },
+                ],
+            },
+        ],
+    },
+    {
         text: "开发秘籍",
         items: [
             {
