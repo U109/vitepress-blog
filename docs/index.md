@@ -4,11 +4,11 @@ layout: home
 title: ZBlog
 titleTemplate: 博客笔记
 hero:
-  name: 张忠振的笔记
-  text: Every second counts
-  tagline: 一个程序员的笔记
+  name: 张忠振的博客
+  text: IT`S NOT A BUG
+  tagline: 在代码的世界中步履蹒跚
   image:
-    src: /index/index_title.png
+    src: /index/瑞克和莫蒂.png
     alt: zzz
   actions:
     - theme: brand
