@@ -38,6 +38,15 @@ export default [
         text: "数据库",
         items: [
             {
+                text: "GBase8s",
+                items: [
+                    {
+                        text: "开发技巧",
+                        link: "/数据库/GBase/开发技巧/查看执行计划",
+                    },
+                ],
+            },
+            {
                 text: "书籍鉴赏",
                 items: [
                     {
