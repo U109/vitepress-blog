@@ -148,6 +148,15 @@ export default {
             ],
         },
     ],
+    '/数据库/GBase/' : [
+        {
+            text: '开发技巧',
+            // collapsed: true,
+            items: [
+                {text: '查看执行计划', link: '/数据库/GBase/开发技巧/查看执行计划'},
+            ],
+        }
+    ],
     '/开发秘籍/招式下三滥/': [
         {
             text: '踢裆、插眼、搞偷袭',
