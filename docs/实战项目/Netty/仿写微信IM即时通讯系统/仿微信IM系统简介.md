@@ -4,6 +4,10 @@ outline: {
 }
 ---
 
+> 此项目来自于掘金小册的[《Netty 入门与实战：仿写微信 IM 即时通讯系统》](https://juejin.cn/book/6844733738119593991?enter_from=course_center&utm_source=course_center)
+> 
+> 源代码：[GitHub](https://github.com/U109/Netty-chatroom.git)
+
 # 单聊流程
 
 单聊指的是两个用户之间相互聊天。下面我们来看一下，用户单聊的基本流程

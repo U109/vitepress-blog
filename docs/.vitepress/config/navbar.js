@@ -7,6 +7,15 @@ export default [
         text: "Java系列",
         items: [
             {
+                text: "JVM",
+                items: [
+                    {
+                        text: "深入浅出JVM",
+                        link: "/Java系列/JVM/深入浅出JVM/JVM内存结构",
+                    }
+                ],
+            },
+            {
                 text: "Spring",
                 items: [
                     {
