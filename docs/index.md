@@ -4,7 +4,7 @@ layout: home
 title: ZBlog
 titleTemplate: 博客笔记
 hero:
-  name: 张忠振的博客
+  name: 收罗万象的博客
   text: IT`S NOT A BUG
   tagline: 在代码的世界中步履蹒跚
   image:
@@ -21,7 +21,7 @@ hero:
 features:
   - icon: ✒️
     title: 学习笔记
-    details: 好记性不如烂笔头，记下来总没错
+    details: 学习从抄写开始
     link: /guide/
     linkText: 快速开始
   - icon: 📑
@@ -30,23 +30,23 @@ features:
     link: /guide/
     linkText: 快速开始
   - icon: 📚
-    title: 书籍摘抄
-    details: 黄金不应埋于黄土之中，书籍节选摘抄、鉴赏
+    title: 书籍收录
+    details: 记录优秀书籍内容，方便查看
     link: /guide/
     linkText: 快速开始
   - icon: ✒️
     title: 开发技巧
-    details: 总有一个适合你
+    details: 总有是一个适合的
     link: /guide/
     linkText: 快速开始
   - icon: 📑
     title: 项目实战
-    details: 理论知识加上项目练习，不会也难
+    details: 一些简单的demo
     link: /guide/
     linkText: 快速开始
   - icon: 📚
     title: 书籍下载
-    details: 收集的一些书籍资料，点击即可下载
+    details: 收集的一些书籍资料
     link: /guide/
     linkText: 快速开始
 ---
