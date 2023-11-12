@@ -8,25 +8,25 @@ outline: {
 
 * 服务端
 
-![img_51.png](img_51.png)
+![img_51.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_51.png)
 
 闪电侠，逆闪，极速先后登录，然后闪电侠拉逆闪，极速和自己加入群聊，下面，我们来看一下各位客户端的控制台界面
 
 * 客户端 - 闪电侠
 
-![img_52.png](img_52.png)
+![img_52.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_52.png)
 
 闪电侠第一个输入 `sendToGroup` 发送群消息。
 
 * 客户端 - 逆闪
 
-![img_53.png](img_53.png)
+![img_53.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_53.png)
 
 逆闪第二个输入 `sendToGroup` 发送群消息，在前面已经收到了闪电侠的消息。
 
 * 客户端 - 极速
 
-![img_54.png](img_54.png)
+![img_54.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_54.png)
 
 逆闪最后一个输入 `sendToGroup` 发送消息，在前面已经收到了闪电侠和逆闪的消息。
 
@@ -294,7 +294,7 @@ serverBootstrap.childHandler(new ChannelInitializer<NioSocketChannel>() {
 
 `ctx.writeAndFlush()` 是从 `pipeline` 链中的当前节点开始往前找到第一个 `outBound` 类型的 `handler` 把对象往前进行传播，如果这个对象确认不需要经过其他 `outBound` 类型的 `handler` 处理，就使用这个方法。
 
-![img_55.png](img_55.png)
+![img_55.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_55.png)
 
 如上图，在某个 `inBound` 类型的 `handler` 处理完逻辑之后，调用 `ctx.writeAndFlush()` 可以直接一口气把对象送到 `codec` 中编码，然后写出去。
 
@@ -302,7 +302,7 @@ serverBootstrap.childHandler(new ChannelInitializer<NioSocketChannel>() {
 
 `ctx.channel().writeAndFlush()` 是从 `pipeline` 链中的最后一个 `outBound` 类型的 `handler` 开始，把对象往前进行传播，如果你确认当前创建的对象需要经过后面的 `outBound` 类型的 `handler`，那么就调用此方法。
 
-![img_56.png](img_56.png)
+![img_56.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_56.png)
 
 如上图，在某个 `inBound` 类型的 `handler` 处理完逻辑之后，调用 `ctx.channel().writeAndFlush()`，对象会从最后一个 `outBound` 类型的 `handler` 开始，逐个往前进行传播，路径是要比 `ctx.writeAndFlush()` 要长的。
 
@@ -327,3 +327,86 @@ protected void channelRead0(ChannelHandlerContext ctx, T packet) {
 
 默认情况下，`Netty` 在启动的时候会开启 `2` 倍的 `cpu` 核数个 `NIO` 线程，而通常情况下我们单机会有几万或者十几万的连接，因此，一条 `NIO` 线程会管理着几千或几万个连接，在传播事件的过程中，单条 `NIO` 线程的处理逻辑可以抽象成以下一个步骤，我们就拿 `channelRead0()` 举例
 
+* 单个 NIO 线程执行的抽象逻辑
+
+```java
+List<Channel> channelList = 已有数据可读的 channel
+for (Channel channel in channelist) {
+   for (ChannelHandler handler in channel.pipeline()) {
+       handler.channelRead0();
+   } 
+}
+```
+
+从上面的抽象逻辑中可以看到，其中只要有一个 `channel` 的一个 `handler` 中的 `channelRead0()` 方法阻塞了 `NIO` 线程，最终都会拖慢绑定在该 `NIO` 线程上的其他所有的 `channel`，当然，这里抽象的逻辑已经做了简化
+
+而我们需要怎么做？对于耗时的操作，我们需要把这些耗时的操作丢到我们的业务线程池中去处理，下面是解决方案的伪代码:
+
+```java
+ThreadPool threadPool = xxx;
+
+protected void channelRead0(ChannelHandlerContext ctx, T packet) {
+    threadPool.submit(new Runnable() {
+        // 1. balabala 一些逻辑
+        // 2. 数据库或者网络等一些耗时的操作
+        // 3. writeAndFlush()
+        // 4. balabala 其他的逻辑
+    })
+}
+```
+
+这样，就可以避免一些耗时的操作影响 `Netty 的` `NIO` 线程，从而影响其他的 `channel`。
+
+# 7. 如何准确统计处理时长
+
+我们接着前面的逻辑来讨论，通常，应用程序都有统计某个操作响应时间的需求，比如，基于我们上面的栗子，我们会这么做:
+
+```java
+protected void channelRead0(ChannelHandlerContext ctx, T packet) {
+    threadPool.submit(new Runnable() {
+        long begin = System.currentTimeMillis();
+        // 1. balabala 一些逻辑
+        // 2. 数据库或者网络等一些耗时的操作
+        // 3. writeAndFlush()
+        // 4. balabala 其他的逻辑
+        long time =  System.currentTimeMillis() - begin;
+    })
+}
+```
+
+这种做法其实是不推荐的，为什么？因为 `writeAndFlush()` 这个方法如果在非 `NIO` 线程（这里，我们其实是在业务线程中调用了该方法）中执行，它是一个异步的操作，调用之后，其实是会立即返回的，剩下的所有的操作，
+都是 `Netty` 内部有一个任务队列异步执行的， 因此，这里的 `writeAndFlush()` 执行完毕之后，并不能代表相关的逻辑， 比如事件传播、编码等逻辑执行完毕，只是表示 `Netty` 接收了这个任务，那么如何才能判断 `writeAndFlush()` 执行完毕呢？我们可以这么做
+
+```java
+protected void channelRead0(ChannelHandlerContext ctx, T packet) {
+    threadPool.submit(new Runnable() {
+        long begin = System.currentTimeMillis();
+        // 1. balabala 一些逻辑
+        // 2. 数据库或者网络等一些耗时的操作
+        
+        // 3. writeAndFlush
+        xxx.writeAndFlush().addListener(future -> {
+            if (future.isDone()) {
+                // 4. balabala 其他的逻辑
+                long time =  System.currentTimeMillis() - begin;
+            }
+        });
+    })
+}
+```
+
+`writeAndFlush()` 方法会返回一个 `ChannelFuture` 对象，我们给这个对象添加一个监听器，然后在回调方法里面，我们可以监听这个方法执行的结果，进而再执行其他逻辑，最后统计耗时，这样统计出来的耗时才是最准确的。
+
+最后，需要提出的一点就是，`Netty` 里面很多方法都是异步的操作，在业务线程中如果要统计这部分操作的时间，都需要使用监听器回调的方式来统计耗时，如果在 `NIO` 线程中调用，就不需要这么干。
+
+# 8. 总结
+
+这小节的知识点较多，每一个知识点都是我在线上千万级长连接应用摸索总结出来的实践经验，了解这些知识点会对你的线上应用有较大帮助，最后，我们来总结一下
+
+1. 我们先在开头实现了群聊消息的最后一个部分：群聊消息的收发，这部分内容对大家来说已经非常平淡无奇了，因此没有贴完整的实现，重点在于实现完这最后一步接下来所做的改造和优化。
+
+2. 所有指令都实现完之后，我们发现我们的 `handler` 已经非常臃肿庞大了，接下来，我们通过单例模式改造、编解码器合并、平行指令 `handler` 合并、慎重选择两种类型的 `writeAndFlush()` 的方式来压缩优化。
+
+3. 在 `handler` 的处理中，如果有耗时的操作，我们需要把这些操作都丢到我们自定义的的业务线程池中处理，因为 `NIO` 线程是会有很多 `channel` 共享的，我们不能阻塞他。
+
+4. 对于统计耗时的场景，如果在自定义业务线程中调用类似 `writeAndFlush()` 的异步操作，需要通过添加监听器的方式来统计。

@@ -8,7 +8,7 @@ outline: {
 
 我们注意到，不管是服务端还是客户端，处理流程大致分为以下几个步骤:
 
-![img_20.png](img_20.png)
+![img_20.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_20.png)
 
 我们把这三类逻辑都写在一个类里面，客户端写在 `ClientHandler`，服务端写在 `ServerHandler`，如果要做功能的扩展（比如，我们要校验 `magic number`，或者其他特殊逻辑），只能在一个类里面去修改， 这个类就会变得越来越臃肿。
 
@@ -19,7 +19,7 @@ outline: {
 
 # pipeline 与 channelHandler 的构成
 
-![img_21.png](img_21.png)
+![img_21.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_21.png)
 
 无论是从服务端来看，还是客户端来看，在 `Netty` 整个框架里面，一条连接对应着一个 `Channel`，这条 `Channel` 所有的处理逻辑都在一个叫做 `ChannelPipeline` 的对象里面，
 `ChannelPipeline` 是一个双向链表结构，他和 `Channel` 之间是一对一的关系。
@@ -30,7 +30,7 @@ outline: {
 
 # channelHandler 的分类
 
-![img_22.png](img_22.png)
+![img_22.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_22.png)
 
 可以看到 `ChannelHandler` 有两大子接口：
 
@@ -95,7 +95,7 @@ public class InBoundHandlerC extends ChannelInboundHandlerAdapter {
 
 我们通过 `addLast()` 方法来为 `pipeline` 添加 `inBoundHandler`，当然，除了这个方法还有其他的方法，感兴趣的同学可以自行浏览一下 `pipeline` 的 `api` ，这里我们添加的顺序为 `A -> B -> C`，最后，我们来看一下控制台的输出:
 
-![img_23.png](img_23.png)
+![img_23.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_23.png)
 
 可以看到，`inBoundHandler` 的执行顺序与我们通过` addLast()` 方法 添加的顺序保持一致，接下来，我们再来看一下 `outBoundHandler` 的事件传播。
 
@@ -153,19 +153,19 @@ public class OutBoundHandlerC extends ChannelOutboundHandlerAdapter {
 
 我们通过 `addLast()` 方法 添加 `outBoundHandler` 的顺序为 `A -> B -> C`，最后，我们来看一下控制台的输出:
 
-![img_24.png](img_24.png)
+![img_24.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_24.png)
 
 可以看到，`outBoundHandler` 的执行顺序与我们添加的顺序相反，最后，我们再来看一下 `pipeline` 的结构和执行顺序。
 
 * pipeline 的结构
 
-![img_25.png](img_25.png)
+![img_25.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_25.png)
 
 不管我们定义的是哪种类型的 `handler`, 最终它们都是以`双向链表`的方式连接，这里实际链表的节点是 `ChannelHandlerContext`，这里为了让结构清晰突出，可以直接把节点看作 `ChannelHandlerContext`。
 
 * pipeline 的执行顺序
 
-![img_26.png](img_26.png)
+![img_26.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_26.png)
 
 虽然两种类型的 `handler` 在一个双向链表里，但是这两类 `handler` 的分工是不一样的，`inBoundHandler` 的事件通常只会传播到下一个 `inBoundHandler`，`outBoundHandler` 的事件通常只会传播到下一个 `outBoundHandler`，两者相互不受干扰。
 

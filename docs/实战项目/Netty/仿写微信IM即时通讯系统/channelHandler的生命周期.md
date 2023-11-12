@@ -86,7 +86,7 @@ public class LifeCyCleTestHandler extends ChannelInboundHandlerAdapter {
 
 接着，我们先运行 `NettyServer.java`，然后再运行 `NettyClient.java`，这个时候，`Server` 端控制台的输出为:
 
-![img_32.png](img_32.png)
+![img_32.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_32.png)
 
 可以看到，`ChannelHandler` 回调方法的执行顺序为:
 
@@ -107,7 +107,7 @@ public class LifeCyCleTestHandler extends ChannelInboundHandlerAdapter {
 
 接下来，我们再把客户端关闭，这个时候对于服务端来说，其实就是 `channel` 被关闭:
 
-![img_33.png](img_33.png)
+![img_33.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_33.png)
 
 `ChannelHandler` 回调方法的执行顺序为:
 
@@ -123,7 +123,7 @@ public class LifeCyCleTestHandler extends ChannelInboundHandlerAdapter {
 
 最后，我们用一幅图来标识 `ChannelHandler` 的生命周期:
 
-![img_34.png](img_34.png)
+![img_34.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_34.png)
 
 光是了解这些生命周期的回调方法其实是比较枯燥乏味的，我们接下来就来看一下这些回调方法的使用场景。
 

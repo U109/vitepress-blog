@@ -159,11 +159,11 @@ private static void startConsoleThread(Channel channel) {
 
 * 客户端
 
-![img_35.png](img_35.png)
+![img_35.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_35.png)
 
 * 服务端
 
-![img_36.png](img_36.png)
+![img_36.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_36.png)
 
 观察服务端侧的控制台，我们可以看到，在客户端第一次发来消息的时候， `AuthHandler` 判断当前用户已通过身份认证，直接移除掉自身，移除掉之后，回调 `handlerRemoved`，这块内容也是属于上小节我们学习的 `ChannelHandler` 生命周期的一部分
 
@@ -203,11 +203,11 @@ public class LoginResponseHandler extends SimpleChannelInboundHandler<LoginRespo
 
 * 客户端
 
-![img_37.png](img_37.png)
+![img_37.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_37.png)
 
 * 服务端
 
-![img_38.png](img_38.png)
+![img_38.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_38.png)
 
 由此看到，客户端如果第一个指令为非登录指令，`AuthHandler` 直接将客户端连接关闭，并且，从上小节，我们学到的有关 `ChannelHandler` 的生命周期相关的内容中也可以看到，
 服务端侧的 `handlerRemoved()` 方法和客户端侧代码的 `channelInActive()` 会被回调到。

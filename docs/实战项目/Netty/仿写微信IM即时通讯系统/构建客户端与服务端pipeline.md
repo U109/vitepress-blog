@@ -238,7 +238,7 @@ public class MessageRequestHandler extends SimpleChannelInboundHandler<MessageRe
 
 # 构建客户端与服务端 pipeline
 
-![img_27.png](img_27.png)
+![img_27.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_27.png)
 
 对应我们的代码:
 

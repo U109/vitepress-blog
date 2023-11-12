@@ -10,7 +10,7 @@ outline: {
 
 首先，我们先来了解一下 `ByteBuf` 的结构:
 
-![img_11.png](img_11.png)
+![img_11.png](../../../public/实战项目/Netty/仿写微信IM即时通讯系统/img_11.png)
 
 以上就是一个 `ByteBuf` 的结构图，从上面这幅图可以看到
 
