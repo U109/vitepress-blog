@@ -4,14 +4,14 @@ export default [
         link: "/",
     },
     {
-        text: "Java系列",
+        text: "Java",
         items: [
             {
                 text: "JVM",
                 items: [
                     {
                         text: "深入浅出JVM",
-                        link: "/Java系列/JVM/深入浅出JVM/JVM内存结构",
+                        link: "/Java/JVM/深入浅出JVM/JVM内存结构",
                     }
                 ],
             },
@@ -40,7 +40,7 @@ export default [
         ],
     },
     {
-        text: "分布式框架",
+        text: "分布式",
         link: "/数据库/书籍鉴赏/",
     },
     {
@@ -122,6 +122,15 @@ export default [
             {
                 text: "网络",
                 link: "/书籍下载/网络/网络",
+            },
+        ],
+    },
+    {
+        text: "资源搜罗",
+        items: [
+            {
+                text: "VPN",
+                link: "/资源搜罗/VPN",
             },
         ],
     },

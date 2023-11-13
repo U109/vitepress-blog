@@ -42,7 +42,7 @@ export default {
         },
         footer: {
             message: "Released under the MIT License.",
-            copyright: "Copyright © 2023-04-23～present HanochMa",
+            copyright: "Copyright © 2022-04-23～present Zhen",
         },
     },
 }

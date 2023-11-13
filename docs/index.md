@@ -21,7 +21,7 @@ hero:
 features:
   - icon: ✒️
     title: 学习笔记
-    details: 学习从抄写开始
+    details: Java系列、分布式框架、数据库
     link: /guide/
     linkText: 快速开始
   - icon: 📑
