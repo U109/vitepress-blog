@@ -56,6 +56,15 @@ export default [
                 ],
             },
             {
+                text: "MySQL",
+                items: [
+                    {
+                        text: "常见问题",
+                        link: "/数据库/MySQL/常见问题/基础",
+                    },
+                ],
+            },
+            {
                 text: "书籍鉴赏",
                 items: [
                     {
