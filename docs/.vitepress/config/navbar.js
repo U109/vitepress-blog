@@ -81,23 +81,23 @@ export default [
         ],
     },
     {
-        text: "开发秘籍",
+        text: "开发技巧",
         items: [
             {
-                text: "招式下三滥",
+                text: "常用命令",
                 items: [
                     {
-                        text: "踢裆、插眼、搞偷袭",
-                        link: "/开发秘籍/招式下三滥/降低代码可读性的12个技巧",
+                        text: "Linux",
+                        link: "/开发技巧/常用命令/Linux/Linux防火墙命令",
                     },
                 ],
             },
             {
-                text: "葵花宝典",
+                text: "坏味道",
                 items: [
                     {
-                        text: "测试",
-                        link: "/开发秘籍/葵花宝典/测试",
+                        text: "降低可读性",
+                        link: "/开发技巧/坏味道/降低代码可读性的12个技巧",
                     },
                 ],
             },
@@ -129,8 +129,8 @@ export default [
         text: "资源搜罗",
         items: [
             {
-                text: "VPN",
-                link: "/资源搜罗/VPN",
+                text: "机场",
+                link: "/资源搜罗/VPN/机场",
             },
         ],
     },
