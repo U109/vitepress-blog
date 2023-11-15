@@ -8,6 +8,8 @@ aside: false
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .book-card {
@@ -37,44 +39,46 @@ aside: false
   margin-bottom: 5px;
 }
 
-.book-description {
-  font-size: 14px;
-}
-
-.book-download {
-    text-decoration: none; 
-    /*color: inherit; */
-}
-
 </style>
+
+# NIO
+
+---
 
 <div class="book-container">
   <div class="book-card">
         <img src="/书籍下载/Java/images/Java NIO.jpg" alt="Book 1" class="book-image" />
-    <a href="/书籍下载/Java/pdf/Java NIO 中文版.pdf" download  style="text-decoration: none;color: inherit; ">
-        <div class="book-title">Java NIO 中文版</div>
-        <div class="book-author">O’Reilly</div>
-    </a>
+        <a href="/书籍下载/Java/pdf/Java NIO 中文版.pdf" download  style="text-decoration: none;color: inherit; ">
+            <div class="book-title">Java NIO 中文版</div>
+            <div class="book-author">O’Reilly</div>
+        </a>
   </div>
- <div class="book-card">
+</div>
+
+# 并发编程
+
+---
+
+<div class="book-container">
+  <div class="book-card">
         <img src="/书籍下载/Java/images/Java多线程编程核心技术.jpg" alt="Book 1" class="book-image">
-<a href="/书籍下载/Java/pdf/Java 多线程编程核心技术.pdf" download style="text-decoration: none;color: inherit; ">
-        <div class="book-title">Java 多线程编程核心技术</div>
-        <div class="book-author">机械工业出版社</div>
-    </a>
+        <a href="/书籍下载/Java/pdf/Java 多线程编程核心技术.pdf" download style="text-decoration: none;color: inherit; ">
+            <div class="book-title">Java 多线程编程核心技术</div>
+            <div class="book-author">机械工业出版社</div>
+        </a>
   </div>
- <div class="book-card">
+  <div class="book-card">
         <img src="/书籍下载/Java/images/Java工程师修炼之道.jpg" alt="Book 1" class="book-image">
-    <a href="/书籍下载/Java/pdf/Java工程师修炼之道.pdf" download style="text-decoration: none;color: inherit; ">
-        <div class="book-title">Java 多线程编程核心技术</div>
-        <div class="book-author">中国工信出版集团</div>
-    </a>
+        <a href="/书籍下载/Java/pdf/Java工程师修炼之道.pdf" download style="text-decoration: none;color: inherit; ">
+            <div class="book-title">Java 多线程编程核心技术</div>
+            <div class="book-author">中国工信出版集团</div>
+        </a>
   </div>
- <div class="book-card">
-  <img src="/书籍下载/Java/images/Java性能调优指南.jpg" alt="Book 1" class="book-image">
-    <a href="/书籍下载/Java/pdf/Java性能调优指南.pdf" download style="text-decoration: none;color: inherit; ">
-        <div class="book-title">Java 多线程编程核心技术</div>
-        <div class="book-author">中国工信出版集团</div>
-    </a>
+  <div class="book-card">
+        <img src="/书籍下载/Java/images/Java性能调优指南.jpg" alt="Book 1" class="book-image">
+        <a href="/书籍下载/Java/pdf/Java性能调优指南.pdf" download style="text-decoration: none;color: inherit; ">
+            <div class="book-title">Java 多线程编程核心技术</div>
+            <div class="book-author">中国工信出版集团</div>
+        </a>
   </div>
 </div>

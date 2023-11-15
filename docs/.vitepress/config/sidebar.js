@@ -175,9 +175,22 @@ export default {
                 {text: '索引', link: '/数据库/MySQL/常见问题/索引'},
                 {text: '存储', link: '/数据库/MySQL/常见问题/存储'},
                 {text: '事务', link: '/数据库/MySQL/常见问题/事务'},
+                {text: '锁', link: '/数据库/MySQL/常见问题/锁'},
                 {text: '进阶功能', link: '/数据库/MySQL/常见问题/进阶功能'},
                 {text: '集群', link: '/数据库/MySQL/常见问题/集群'},
                 {text: 'SQL', link: '/数据库/MySQL/常见问题/SQL'},
+            ],
+        }
+    ],
+    '/数据库/Redis/常见问题/': [
+        {
+            text: 'Redis常见八股文',
+            // collapsed: true,
+            items: [
+                {text: '基本概念', link: '/数据库/Redis/常见问题/基本概念'},
+                {text: '集群', link: '/数据库/Redis/常见问题/集群'},
+                {text: '业务场景', link: '/数据库/Redis/常见问题/业务场景'},
+                {text: '优化', link: '/数据库/Redis/常见问题/优化'},
             ],
         }
     ],
@@ -206,6 +219,15 @@ export default {
             items: [
                 {text: 'Linux防火墙命令', link: '/开发技巧/常用命令/Linux/Linux防火墙命令'},
                 {text: 'Linux端口命令', link: '/开发技巧/常用命令/Linux/Linux端口命令'},
+            ],
+        }
+    ],
+    '/开发技巧/常用命令/Redis': [
+        {
+            text: 'Redis命令',
+            // collapsed: true,
+            items: [
+                {text: 'Redis常用命令', link: '/开发技巧/常用命令/Redis/Redis常用命令'},
             ],
         }
     ],
@@ -276,19 +298,28 @@ export default {
             ],
         }
     ],
-    '/书籍下载/': [
+    '/书籍下载/Java/': [
         {
             text: 'Java',
-            collapsed: true,
             items: [
-                {text: 'Java', link: '/书籍下载/Java/Java'},
+                {text: 'NIO', link: '/书籍下载/Java/Java#nio'},
+                {text: '并发编程', link: '/书籍下载/Java/Java#并发编程'},
             ],
         },
+    ],
+    '/书籍下载/网络/': [
         {
             text: '网络',
-            collapsed: true,
             items: [
-                {text: 'HTTP', link: '/书籍下载/网络/网络'},
+                {text: 'HTTP', link: '/书籍下载/网络/网络#http'},
+            ],
+        },
+    ],
+    '/书籍下载/数据库/': [
+        {
+            text: '数据库',
+            items: [
+                {text: 'MySQL', link: '/书籍下载/数据库/数据库#mysql'},
             ],
         },
     ],
