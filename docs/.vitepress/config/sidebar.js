@@ -166,7 +166,7 @@ export default {
             ],
         },
     ],
-    '/数据库/MySQL/常见问题/': [
+    '/数据库/MySQL/': [
         {
             text: 'MySQL常见八股文',
             // collapsed: true,
@@ -179,6 +179,13 @@ export default {
                 {text: '进阶功能', link: '/数据库/MySQL/常见问题/进阶功能'},
                 {text: '集群', link: '/数据库/MySQL/常见问题/集群'},
                 {text: 'SQL', link: '/数据库/MySQL/常见问题/SQL'},
+            ],
+        },
+        {
+            text: 'MySQL进阶八股文',
+            // collapsed: true,
+            items: [
+                {text: 'MySQL的索引为什么使用B+树而不是用跳表？', link: '/数据库/MySQL/进阶问题/MySQL的索引为什么使用B+树而不是用跳表'},
             ],
         }
     ],
