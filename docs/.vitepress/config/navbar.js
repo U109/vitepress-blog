@@ -73,6 +73,12 @@ export default [
         text: "开发技巧",
         items: [
             {
+                text: "算法",
+                items: [
+                    {text: "常见算法", link: "/开发技巧/算法/常见算法/一致性Hash算法",},
+                ],
+            },
+            {
                 text: "常用命令",
                 items: [
                     {text: "Linux", link: "/开发技巧/常用命令/Linux/Linux防火墙命令",},

@@ -189,15 +189,25 @@ export default {
             ],
         }
     ],
-    '/数据库/Redis/常见问题/': [
+    '/数据库/Redis/': [
         {
             text: 'Redis常见八股文',
             // collapsed: true,
             items: [
                 {text: '基本概念', link: '/数据库/Redis/常见问题/基本概念'},
+                {text: '数据结构', link: '/数据库/Redis/常见问题/数据结构'},
+                {text: '数据存储', link: '/数据库/Redis/常见问题/数据存储'},
+                {text: '多线程', link: '/数据库/Redis/常见问题/多线程'},
                 {text: '集群', link: '/数据库/Redis/常见问题/集群'},
                 {text: '业务场景', link: '/数据库/Redis/常见问题/业务场景'},
                 {text: '优化', link: '/数据库/Redis/常见问题/优化'},
+            ],
+        },
+        {
+            text: 'Redis进阶八股文',
+            // collapsed: true,
+            items: [
+                {text: '如何保证Redis的高并发', link: '/数据库/Redis/进阶问题/如何保证Redis的高并发'},
             ],
         }
     ],
@@ -216,6 +226,15 @@ export default {
             // collapsed: true,
             items: [
                 {text: '降低代码可读性的12个技巧', link: '/开发秘籍/招式下三滥/降低代码可读性的12个技巧'},
+            ],
+        }
+    ],
+    '/开发技巧/算法/常见算法': [
+        {
+            text: '较为常见的算法',
+            // collapsed: true,
+            items: [
+                {text: '一致性Hash算法', link: '/开发技巧/算法/常见算法/一致性Hash算法'},
             ],
         }
     ],
