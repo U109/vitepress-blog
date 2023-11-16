@@ -208,6 +208,8 @@ export default {
             // collapsed: true,
             items: [
                 {text: '如何保证Redis的高并发', link: '/数据库/Redis/进阶问题/如何保证Redis的高并发'},
+                {text: 'Redis实现分布式锁的7种方案', link: '/数据库/Redis/进阶问题/Redis实现分布式锁的7种方案'},
+                {text: 'Redis实现排行榜', link: '/数据库/Redis/进阶问题/Redis实现排行榜'},
             ],
         }
     ],
