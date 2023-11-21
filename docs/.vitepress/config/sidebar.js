@@ -17,6 +17,15 @@ export default {
             ],
         }
     ],
+    '/Java/JVM/常见问题/': [
+        {
+            text: '常见问题',
+            // collapsed: true,
+            items: [
+                {text: '元空间会产生内存溢出么', link: '/Java/JVM/常见问题/元空间会产生内存溢出么'},
+            ],
+        }
+    ],
     '/分布式/消息队列/常见问题/': [
         {
             text: '消息队列',

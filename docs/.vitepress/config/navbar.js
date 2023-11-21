@@ -9,7 +9,8 @@ export default [
             {
                 text: "JVM",
                 items: [
-                    {text: "深入浅出JVM", link: "/Java/JVM/深入浅出JVM/JVM内存结构",}
+                    {text: "深入浅出JVM", link: "/Java/JVM/深入浅出JVM/JVM内存结构",},
+                    {text: "常见问题", link: "/Java/JVM/常见问题/元空间会产生内存溢出么",}
                 ],
             },
             {
