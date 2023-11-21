@@ -23,6 +23,7 @@ export default {
             // collapsed: true,
             items: [
                 {text: '元空间会产生内存溢出么', link: '/Java/JVM/常见问题/元空间会产生内存溢出么'},
+                {text: 'JVM的主要组成部分及其作用', link: '/Java/JVM/常见问题/JVM的主要组成部分及其作用'},
             ],
         }
     ],
