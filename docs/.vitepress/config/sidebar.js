@@ -24,6 +24,10 @@ export default {
             items: [
                 {text: '元空间会产生内存溢出么', link: '/Java/JVM/常见问题/元空间会产生内存溢出么'},
                 {text: 'JVM的主要组成部分及其作用', link: '/Java/JVM/常见问题/JVM的主要组成部分及其作用'},
+                {text: 'Java内存区域相关问题', link: '/Java/JVM/常见问题/Java内存区域相关问题'},
+                {text: '深拷贝和浅拷贝', link: '/Java/JVM/常见问题/深拷贝和浅拷贝'},
+                {text: '说一下堆栈的区别', link: '/Java/JVM/常见问题/说一下堆栈的区别'},
+                {text: 'HotSpot虚拟机对象探秘', link: '/Java/JVM/常见问题/HotSpot虚拟机对象探秘'},
             ],
         }
     ],
