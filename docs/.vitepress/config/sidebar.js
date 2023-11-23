@@ -19,14 +19,19 @@ export default {
     ],
     '/Java/JVM/常见问题/': [
         {
-            text: '常见问题',
-            // collapsed: true,
+            text: '单篇问题',
             items: [
                 {text: '元空间会产生内存溢出么', link: '/Java/JVM/常见问题/元空间会产生内存溢出么'},
                 {text: 'JVM的主要组成部分及其作用', link: '/Java/JVM/常见问题/JVM的主要组成部分及其作用'},
-                {text: 'Java内存区域相关问题', link: '/Java/JVM/常见问题/Java内存区域相关问题'},
+                {text: 'JVM 运行时堆内存如何分代', link: '/Java/JVM/常见问题/JVM运行时堆内存如何分代'},
                 {text: '深拷贝和浅拷贝', link: '/Java/JVM/常见问题/深拷贝和浅拷贝'},
                 {text: '说一下堆栈的区别', link: '/Java/JVM/常见问题/说一下堆栈的区别'},
+            ],
+        },
+        {
+            text: '问题合集',
+            items: [
+                {text: 'Java内存区域相关问题', link: '/Java/JVM/常见问题/Java内存区域相关问题'},
                 {text: 'HotSpot虚拟机对象探秘', link: '/Java/JVM/常见问题/HotSpot虚拟机对象探秘'},
                 {text: '内存溢出异常问题', link: '/Java/JVM/常见问题/内存溢出异常问题'},
                 {text: '垃圾收集器问题', link: '/Java/JVM/常见问题/垃圾收集器问题'},
