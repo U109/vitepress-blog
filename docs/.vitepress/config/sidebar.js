@@ -28,6 +28,8 @@ export default {
                 {text: '深拷贝和浅拷贝', link: '/Java/JVM/常见问题/深拷贝和浅拷贝'},
                 {text: '说一下堆栈的区别', link: '/Java/JVM/常见问题/说一下堆栈的区别'},
                 {text: 'HotSpot虚拟机对象探秘', link: '/Java/JVM/常见问题/HotSpot虚拟机对象探秘'},
+                {text: '内存溢出异常问题', link: '/Java/JVM/常见问题/内存溢出异常问题'},
+                {text: '垃圾收集器问题', link: '/Java/JVM/常见问题/垃圾收集器问题'},
             ],
         }
     ],
