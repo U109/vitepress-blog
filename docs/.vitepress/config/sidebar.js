@@ -19,11 +19,19 @@ export default {
     ],
     '/Java/JVM/常见问题/': [
         {
+            text: '前置知识',
+            items: [
+                {text: '深入浅出JVM', link: '/Java/JVM/深入浅出JVM/JVM内存结构'},
+            ],
+        },
+        {
             text: '单篇问题',
             items: [
                 {text: '元空间会产生内存溢出么', link: '/Java/JVM/常见问题/元空间会产生内存溢出么'},
                 {text: 'JVM的主要组成部分及其作用', link: '/Java/JVM/常见问题/JVM的主要组成部分及其作用'},
                 {text: 'JVM 运行时堆内存如何分代', link: '/Java/JVM/常见问题/JVM运行时堆内存如何分代'},
+                {text: 'JVM为什么要进行分代', link: '/Java/JVM/常见问题/JVM为什么要进行分代'},
+                {text: 'JVM有哪些垃圾回收算法', link: '/Java/JVM/常见问题/JVM有哪些垃圾回收算法'},
                 {text: '深拷贝和浅拷贝', link: '/Java/JVM/常见问题/深拷贝和浅拷贝'},
                 {text: '说一下堆栈的区别', link: '/Java/JVM/常见问题/说一下堆栈的区别'},
             ],
@@ -32,9 +40,9 @@ export default {
             text: '问题合集',
             items: [
                 {text: 'Java内存区域相关问题', link: '/Java/JVM/常见问题/Java内存区域相关问题'},
-                {text: 'HotSpot虚拟机对象探秘', link: '/Java/JVM/常见问题/HotSpot虚拟机对象探秘'},
-                {text: '内存溢出异常问题', link: '/Java/JVM/常见问题/内存溢出异常问题'},
-                {text: '垃圾收集器问题', link: '/Java/JVM/常见问题/垃圾收集器问题'},
+                {text: 'HotSpot虚拟机对象相关问题', link: '/Java/JVM/常见问题/HotSpot虚拟机对象相关问题'},
+                {text: '内存溢出异常相关问题', link: '/Java/JVM/常见问题/内存溢出异常相关问题'},
+                {text: '垃圾收集器相关问题', link: '/Java/JVM/常见问题/垃圾收集器相关问题'},
             ],
         }
     ],
@@ -216,7 +224,10 @@ export default {
             text: 'MySQL进阶八股文',
             // collapsed: true,
             items: [
-                {text: 'MySQL的索引为什么使用B+树而不是用跳表？', link: '/数据库/MySQL/进阶问题/MySQL的索引为什么使用B+树而不是用跳表'},
+                {
+                    text: 'MySQL的索引为什么使用B+树而不是用跳表？',
+                    link: '/数据库/MySQL/进阶问题/MySQL的索引为什么使用B+树而不是用跳表'
+                },
             ],
         }
     ],
