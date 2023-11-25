@@ -32,6 +32,7 @@ export default {
                 {text: 'JVM 运行时堆内存如何分代', link: '/Java/JVM/常见问题/JVM运行时堆内存如何分代'},
                 {text: 'JVM为什么要进行分代', link: '/Java/JVM/常见问题/JVM为什么要进行分代'},
                 {text: 'JVM有哪些垃圾回收算法', link: '/Java/JVM/常见问题/JVM有哪些垃圾回收算法'},
+                {text: 'JVM有哪些垃圾收集器', link: '/Java/JVM/常见问题/JVM有哪些垃圾收集器'},
                 {text: '深拷贝和浅拷贝', link: '/Java/JVM/常见问题/深拷贝和浅拷贝'},
                 {text: '说一下堆栈的区别', link: '/Java/JVM/常见问题/说一下堆栈的区别'},
             ],
