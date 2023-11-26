@@ -44,6 +44,7 @@ export default {
                 {text: 'HotSpot虚拟机对象相关问题', link: '/Java/JVM/常见问题/HotSpot虚拟机对象相关问题'},
                 {text: '内存溢出异常相关问题', link: '/Java/JVM/常见问题/内存溢出异常相关问题'},
                 {text: '垃圾收集器相关问题', link: '/Java/JVM/常见问题/垃圾收集器相关问题'},
+                {text: '类加载机制相关问题', link: '/Java/JVM/常见问题/类加载机制相关问题'},
             ],
         }
     ],
