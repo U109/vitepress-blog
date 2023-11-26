@@ -6,7 +6,7 @@ titleTemplate: 博客笔记
 hero:
   name: 收罗万象的博客
   text: IT`S NOT A BUG
-  tagline: 在代码的世界中步履蹒跚
+  tagline: 写写画画，自由自在
   image:
     src: /index/瑞克和莫蒂.png
     alt: zzz
