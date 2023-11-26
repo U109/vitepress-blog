@@ -27,6 +27,7 @@ export default {
         {
             text: '单篇问题',
             items: [
+                {text: 'Java中的对象一定是在堆上分配的吗', link: '/Java/JVM/常见问题/Java中的对象一定是在堆上分配的吗'},
                 {text: '元空间会产生内存溢出么', link: '/Java/JVM/常见问题/元空间会产生内存溢出么'},
                 {text: 'JVM的主要组成部分及其作用', link: '/Java/JVM/常见问题/JVM的主要组成部分及其作用'},
                 {text: 'JVM 运行时堆内存如何分代', link: '/Java/JVM/常见问题/JVM运行时堆内存如何分代'},
@@ -45,6 +46,7 @@ export default {
                 {text: '内存溢出异常相关问题', link: '/Java/JVM/常见问题/内存溢出异常相关问题'},
                 {text: '垃圾收集器相关问题', link: '/Java/JVM/常见问题/垃圾收集器相关问题'},
                 {text: '类加载机制相关问题', link: '/Java/JVM/常见问题/类加载机制相关问题'},
+                {text: 'JVM调优相关问题', link: '/Java/JVM/常见问题/JVM调优相关问题'},
             ],
         }
     ],
