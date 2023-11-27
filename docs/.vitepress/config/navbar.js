@@ -18,6 +18,12 @@ export default [
                 items: [],
             },
             {
+                text: "SpringBoot",
+                items: [
+                    {text: "常见问题", link: "/Java/SpringBoot/常见问题/SpringBoot概述相关问题",}
+                ],
+            },
+            {
                 text: "Netty",
                 items: [],
             },

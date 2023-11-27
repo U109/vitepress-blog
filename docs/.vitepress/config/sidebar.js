@@ -50,6 +50,26 @@ export default {
             ],
         }
     ],
+    '/Java/SpringBoot/常见问题/': [
+        {
+            text: '前置知识',
+            items: [
+                {text: '深入浅出JVM', link: '/Java/JVM/深入浅出JVM/JVM内存结构'},
+            ],
+        },
+        {
+            text: '单篇问题',
+            items: [
+            ],
+        },
+        {
+            text: '问题合集',
+            items: [
+                {text: 'SpringBoot概述相关问题', link: 'Java/SpringBoot/常见问题/SpringBoot概述相关问题'},
+                {text: '自动配置相关问题', link: 'Java/SpringBoot/常见问题/自动配置相关问题'},
+            ],
+        }
+    ],
     '/分布式/消息队列/常见问题/': [
         {
             text: '消息队列',
@@ -231,6 +251,9 @@ export default {
                 {
                     text: 'MySQL的索引为什么使用B+树而不是用跳表？',
                     link: '/数据库/MySQL/进阶问题/MySQL的索引为什么使用B+树而不是用跳表'
+                }, {
+                    text: 'MySQL一条查询语句的执行过程',
+                    link: '/数据库/MySQL/进阶问题/MySQL一条查询语句的执行过程'
                 },
             ],
         }
