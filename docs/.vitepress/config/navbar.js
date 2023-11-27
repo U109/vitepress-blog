@@ -119,6 +119,7 @@ export default [
         text: "资源搜罗",
         items: [
             {text: "机场", link: "/资源搜罗/VPN/机场",},
+            {text: "神站", link: "/资源搜罗/神站/神站",},
         ],
     },
 ];
