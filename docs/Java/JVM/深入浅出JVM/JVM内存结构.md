@@ -7,7 +7,6 @@ Java 虚拟机的内存空间分为 5 个部分：
 - 本地方法栈
 - 堆
 - 方法区
-- 直接内存
 
 ![jvm-memory-structure](/Java系列/JVM/深入浅出JVM/jvm-memory-structure.jpg)
 
