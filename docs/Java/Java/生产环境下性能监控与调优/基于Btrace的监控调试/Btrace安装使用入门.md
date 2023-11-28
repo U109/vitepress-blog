@@ -172,7 +172,7 @@ cn.mrcode.stady.monitor_tuning.chapter4.Ch4Controller,arg1
 
 ## 在 jvisualvm 中运行 BTrace 脚本
 
-前面已经讲解过，需要安装 [BTrace Workbench](../02/01.md#btrace-workbench)
+前面已经讲解过，需要安装 [BTrace Workbench](/Java/Java/生产环境下性能监控与调优/基于JVisualVM的可视化监控/监控本地JAVA进程.md#btrace-workbench)
 
 只需要将写好的脚本复制过来，添加好依赖包即可
 
