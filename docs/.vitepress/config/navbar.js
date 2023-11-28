@@ -7,15 +7,17 @@ export default [
         text: "Java",
         items: [
             {
+                text: "Java",
+                items: [
+                    {text: "生产环境下性能监控与调优", link: "/Java/Java/生产环境下性能监控与调优/为什么要学习这课程",},
+                ],
+            },
+            {
                 text: "JVM",
                 items: [
                     {text: "深入浅出JVM", link: "/Java/JVM/深入浅出JVM/JVM内存结构",},
                     {text: "常见问题", link: "/Java/JVM/常见问题/元空间会产生内存溢出么",}
                 ],
-            },
-            {
-                text: "Spring",
-                items: [],
             },
             {
                 text: "SpringBoot",
@@ -36,6 +38,12 @@ export default [
                 text: "消息队列",
                 items: [
                     {text: "常见问题", link: "/分布式/消息队列/常见问题/为什么使用消息队列",},
+                ],
+            },
+            {
+                text: "高并发系统",
+                items: [
+                    {text: "高并发系统设计40问", link: "/分布式/高并发系统/高并发系统设计40问/开篇/为什么你要学习高并发系统设计",},
                 ],
             },
         ],
