@@ -127,8 +127,7 @@ export default {
         },
         {
             text: '单篇问题',
-            items: [
-            ],
+            items: [{text: 'Spring Bean的生命周期', link: '/Java/SpringBoot/常见问题/SpringBean的生命周期'}],
         },
         {
             text: '问题合集',
