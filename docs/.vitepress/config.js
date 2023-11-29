@@ -12,6 +12,15 @@ export default {
         ['link', {rel: 'preconnect', href: 'https://fonts.googleapis.com'}],
         ['link', {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''}],
         ['link', {href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet'}],
+        ['script', {async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-GKCV1DN0DR'}],
+        [
+            'script',
+            {},
+            `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GKCV1DN0DR');`,
+        ],
     ],
     markdown: {
         // lineNumbers: true,//代码块启用行号
