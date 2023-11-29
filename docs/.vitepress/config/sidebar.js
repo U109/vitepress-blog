@@ -53,6 +53,7 @@ export default {
                 {text: 'Spring Bean的生命周期', link: '/Java/SpringBoot/常见问题/SpringBean的生命周期'},
                 {text: 'Spring中事务传播行为', link: '/Java/SpringBoot/常见问题/Spring中事务传播行为'},
                 {text: 'Spring事务失效的问题', link: '/Java/SpringBoot/常见问题/Spring事务失效的问题'},
+                {text: 'Spring中有哪些方式可以把Bean注入到IOC容器', link: '/Java/SpringBoot/常见问题/Spring中有哪些方式可以把Bean注入到IOC容器'},
             ],
         },
         {
