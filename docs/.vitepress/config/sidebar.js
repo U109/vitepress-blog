@@ -55,6 +55,7 @@ export default {
                 {text: 'Spring事务失效的问题', link: '/Java/SpringBoot/常见问题/Spring事务失效的问题'},
                 {text: 'Spring中有哪些方式可以把Bean注入到IOC容器', link: '/Java/SpringBoot/常见问题/Spring中有哪些方式可以把Bean注入到IOC容器'},
                 {text: 'SpringBoot常用注解', link: '/Java/SpringBoot/常见问题/SpringBoot常用注解'},
+                {text: 'SpringIOC的工作流程', link: '/Java/SpringBoot/常见问题/SpringIOC的工作流程'},
             ],
         },
         {
