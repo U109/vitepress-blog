@@ -85,9 +85,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, compiled mode)
 
 - `-Xmx` ：最大堆内存
 
-  对应的 XX 参数是 `-XX:InitialHeapSize`
+  对应的 XX 参数是 `-XX:MaxHeapSize`
 
 -  `-Xms`：初始化堆大小
 
-  对应的 XX 参数是 `-XX:MaxHeapSize`
+  对应的 XX 参数是 `-XX:InitialHeapSize`
 
