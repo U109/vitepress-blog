@@ -27,7 +27,9 @@ export default [
             },
             {
                 text: "Netty",
-                items: [],
+                items: [
+                    {text: "常见问题", link: "/Java/Netty/常见问题/Netty理论相关问题",}
+                ],
             },
         ],
     },
@@ -84,6 +86,12 @@ export default [
         text: "实战项目",
         items: [
             {
+                text: "Java",
+                items: [
+                    {text: "监听MySQL的Binlog", link: "/实战项目/Java/监听MySQL的Binlog/Java监听MySQL的Binlog",},
+                ],
+            },
+            {
                 text: "Netty",
                 items: [
                     {text: "仿写微信IM即时通讯系统", link: "/实战项目/Netty/仿写微信IM即时通讯系统/仿微信IM系统简介",},
@@ -133,7 +141,7 @@ export default [
         text: "资源搜罗",
         items: [
             {text: "机场", link: "/资源搜罗/VPN/机场",},
-            {text: "神站", link: "/资源搜罗/神站/神站",},
+            // {text: "神站", link: "/资源搜罗/神站/神站",},
         ],
     },
 ];

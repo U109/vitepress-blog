@@ -146,6 +146,17 @@ const HowDoesMySQLRun = [
             {text: '调节成本常数', link: '/数据库/书籍鉴赏/MySQL是怎样运行的/MySQL基于成本的优化/调节成本常数'},
         ],
     },
+    {
+        text: 'InnoDB统计数据是如何收集的',
+        collapsed: true,
+        items: [
+            {text: '两种不同的统计数据存储方式', link: '/数据库/书籍鉴赏/MySQL是怎样运行的/InnoDB统计数据是如何收集的/两种不同的统计数据存储方式'},
+            {text: '基于磁盘的永久性统计数据', link: '/数据库/书籍鉴赏/MySQL是怎样运行的/InnoDB统计数据是如何收集的/基于磁盘的永久性统计数据'},
+            {text: '基于内存的非永久性统计数据', link: '/数据库/书籍鉴赏/MySQL是怎样运行的/InnoDB统计数据是如何收集的/基于内存的非永久性统计数据'},
+            {text: 'innodb_stats_method的使用', link: '/数据库/书籍鉴赏/MySQL是怎样运行的/InnoDB统计数据是如何收集的/innodb_stats_method的使用'},
+            {text: '总结', link: '/数据库/书籍鉴赏/MySQL是怎样运行的/InnoDB统计数据是如何收集的/总结'},
+        ],
+    },
 ]
 
 export default HowDoesMySQLRun;

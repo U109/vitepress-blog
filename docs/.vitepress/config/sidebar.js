@@ -5,6 +5,8 @@ import InDepthIntroductionToJVM from "./sidebars/Java/JVM/InDepthIntroductionToJ
 import Questions from "./sidebars/分布式/高并发系统/40Questions";
 import MySQLQuestions from "./sidebars/数据库/MySQL/MySQLQuestions";
 import HowDoesMySQLRun from "./sidebars/数据库/书籍鉴赏/HowDoesMySQLRun";
+import VPN from "./sidebars/资源搜罗/VPN";
+import Redis from "./sidebars/数据库/Redis/Redis";
 
 export default {
     '/Java/Java/生产环境下性能监控与调优/': MonitoringAndTuning,
@@ -53,7 +55,10 @@ export default {
                 {text: 'Spring Bean的生命周期', link: '/Java/SpringBoot/常见问题/SpringBean的生命周期'},
                 {text: 'Spring中事务传播行为', link: '/Java/SpringBoot/常见问题/Spring中事务传播行为'},
                 {text: 'Spring事务失效的问题', link: '/Java/SpringBoot/常见问题/Spring事务失效的问题'},
-                {text: 'Spring中有哪些方式可以把Bean注入到IOC容器', link: '/Java/SpringBoot/常见问题/Spring中有哪些方式可以把Bean注入到IOC容器'},
+                {
+                    text: 'Spring中有哪些方式可以把Bean注入到IOC容器',
+                    link: '/Java/SpringBoot/常见问题/Spring中有哪些方式可以把Bean注入到IOC容器'
+                },
                 {text: 'SpringBoot常用注解', link: '/Java/SpringBoot/常见问题/SpringBoot常用注解'},
                 {text: 'SpringIOC的工作流程', link: '/Java/SpringBoot/常见问题/SpringIOC的工作流程'},
             ],
@@ -65,6 +70,24 @@ export default {
                 {text: '自动配置相关问题', link: '/Java/SpringBoot/常见问题/自动配置相关问题'},
                 {text: '安全相关问题', link: '/Java/SpringBoot/常见问题/安全相关问题'},
                 {text: '监视器相关问题', link: '/Java/SpringBoot/常见问题/监视器相关问题'},
+            ],
+        }
+    ],
+    '/Java/Netty/常见问题/': [
+        {
+            text: '前置知识',
+            items: [],
+        },
+        {
+            text: '单篇问题',
+            items: [
+                {text: 'Netty架构设计', link: '/Java/Netty/常见问题/Netty架构设计'},
+            ],
+        },
+        {
+            text: '问题合集',
+            items: [
+                {text: 'Netty理论相关问题', link: '/Java/Netty/常见问题/Netty理论相关问题'},
             ],
         }
     ],
@@ -81,30 +104,7 @@ export default {
     '/分布式/高并发系统/高并发系统设计40问/': Questions,
     '/数据库/书籍鉴赏/': HowDoesMySQLRun,
     '/数据库/MySQL/': MySQLQuestions,
-    '/数据库/Redis/': [
-        {
-            text: 'Redis常见八股文',
-            // collapsed: true,
-            items: [
-                {text: '基本概念', link: '/数据库/Redis/常见问题/基本概念'},
-                {text: '数据结构', link: '/数据库/Redis/常见问题/数据结构'},
-                {text: '数据存储', link: '/数据库/Redis/常见问题/数据存储'},
-                {text: '多线程', link: '/数据库/Redis/常见问题/多线程'},
-                {text: '集群', link: '/数据库/Redis/常见问题/集群'},
-                {text: '业务场景', link: '/数据库/Redis/常见问题/业务场景'},
-                {text: '优化', link: '/数据库/Redis/常见问题/优化'},
-            ],
-        },
-        {
-            text: 'Redis进阶八股文',
-            // collapsed: true,
-            items: [
-                {text: '如何保证Redis的高并发', link: '/数据库/Redis/进阶问题/如何保证Redis的高并发'},
-                {text: 'Redis实现分布式锁的7种方案', link: '/数据库/Redis/进阶问题/Redis实现分布式锁的7种方案'},
-                {text: 'Redis实现排行榜', link: '/数据库/Redis/进阶问题/Redis实现排行榜'},
-            ],
-        }
-    ],
+    '/数据库/Redis/': Redis,
     '/数据库/GBase/': [
         {
             text: '开发技巧',
@@ -153,6 +153,15 @@ export default {
     ],
     '/框架配置/': FrameConfiguration,
     '/实战项目/Netty/仿写微信IM即时通讯系统/': IMSystem,
+    '/实战项目/Java/监听MySQL的Binlog/': [
+        {
+            text: '监听MySQL的Binlog',
+            items: [
+                {text: 'Java监听MySQL的Binlog', link: '/实战项目/Java/监听MySQL的Binlog/Java监听MySQL的Binlog'},
+                {text: 'Canal监听MySQL的Binlog', link: '/实战项目/Java/监听MySQL的Binlog/Canal监听MySQL的Binlog'},
+            ],
+        }
+    ],
     '/书籍下载/Java/': [
         {
             text: 'Java',
@@ -178,51 +187,5 @@ export default {
             ],
         },
     ],
-    '/资源搜罗/VPN/': [
-        {
-            text: '一线机场',
-            collapsed: true,
-            items: [
-                {text: 'nexitally(奶昔)', link: '/资源搜罗/VPN/机场#nexitally-奶昔'},
-                {text: 'ytoo', link: '/资源搜罗/VPN/机场#ytoo'},
-                {text: 'mesl', link: '/资源搜罗/VPN/机场#mesl'},
-                {text: 'TAG', link: '/资源搜罗/VPN/机场#tag'},
-                {text: 'flowercloud(花云)', link: '/资源搜罗/VPN/机场#flowercloud-花云'},
-                {text: 'AmyTelecom', link: '/资源搜罗/VPN/机场#amytelecom'},
-                {text: 'ImmTelecom', link: '/资源搜罗/VPN/机场#immtelecom'},
-            ],
-        },
-        {
-            text: '二线机场',
-            collapsed: true,
-            items: [
-                {text: 'Bitz', link: '/资源搜罗/VPN/机场#bitz'},
-                {text: 'Flyingbird', link: '/资源搜罗/VPN/机场#flyingbird'},
-                {text: 'v2tun', link: '/资源搜罗/VPN/机场#v2tun'},
-                {text: 'cnix(薯条)', link: '/资源搜罗/VPN/机场#cnix-薯条'},
-                {text: 'WestData(西部数据)', link: '/资源搜罗/VPN/机场#westdata-西部数据'},
-                {text: '跑路云', link: '/资源搜罗/VPN/机场#跑路云'},
-                {text: 'FastLink', link: '/资源搜罗/VPN/机场#fastlink'},
-                {text: 'Godetia', link: '/资源搜罗/VPN/机场#godetia'},
-                {text: 'CTC', link: '/资源搜罗/VPN/机场#ctc'},
-                {text: 'texon', link: '/资源搜罗/VPN/机场#texon'},
-                {text: 'CreamData(奶油)', link: '/资源搜罗/VPN/机场#creamdata-奶油'},
-                {text: '白月光', link: '/资源搜罗/VPN/机场#白月光'},
-                {text: 'MDSS', link: '/资源搜罗/VPN/机场#mdss'},
-            ],
-        },
-        {
-            text: '中转机场',
-            collapsed: true,
-            items: [
-                {text: '猫熊', link: '/资源搜罗/VPN/机场#猫熊'},
-                {text: '魔戒', link: '/资源搜罗/VPN/机场#魔戒'},
-                {text: '中国国际机场', link: '/资源搜罗/VPN/机场#中国国际机场'},
-                {text: '次元云', link: '/资源搜罗/VPN/机场#次元云'},
-                {text: 'CoffeeCloud', link: '/资源搜罗/VPN/机场#coffeecloud'},
-                {text: 'COO NETWORK', link: '/资源搜罗/VPN/机场#coo-network'},
-                {text: '奇妙之旅', link: '/资源搜罗/VPN/机场#奇妙之旅'},
-            ],
-        },
-    ],
+    '/资源搜罗/VPN/': VPN,
 }

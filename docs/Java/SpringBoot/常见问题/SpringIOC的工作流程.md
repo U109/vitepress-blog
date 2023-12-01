@@ -27,7 +27,7 @@ Spring IOC的工作流程大致可以分为三个阶段。
 
 通常我们会通过`@Autowired`或者`BeanFactory.getBean()`从`IOC`容器中获取指定的`bean`实例。
 
-另外，针对设置`layy-init`属性以及非单例`bean`的实例化，是在每次获取`bean`对象的时候，调用`bean`的初始化方法来完成实例化的，并且Spring IOC容器不会去管理这些`Bean`。
+另外，针对设置`lazy-init`属性以及非单例`bean`的实例化，是在每次获取`bean`对象的时候，调用`bean`的初始化方法来完成实例化的，并且Spring IOC容器不会去管理这些`Bean`。
 
 ![img_4.png](img_4.png)
 

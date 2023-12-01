@@ -37,6 +37,7 @@ export default {
         /* 链接 */
         socialLinks: [
             // | 'discord'| 'facebook'| 'github'| 'instagram'| 'linkedin'| 'slack'| 'twitter'| 'youtube'
+            { icon: 'twitter', link: 'https://twitter.com/StewardPeg5' },
             {icon: 'github', link: 'https://github.com/U109'},
         ],
         /* 侧边导航 */
