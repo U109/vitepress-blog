@@ -61,6 +61,7 @@ export default {
                 },
                 {text: 'SpringBoot常用注解', link: '/Java/SpringBoot/常见问题/SpringBoot常用注解'},
                 {text: 'SpringIOC的工作流程', link: '/Java/SpringBoot/常见问题/SpringIOC的工作流程'},
+                {text: 'IOC容器中只存放单例Bean吗', link: '/Java/SpringBoot/常见问题/IOC容器中只存放单例Bean吗'},
             ],
         },
         {
