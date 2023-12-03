@@ -6,7 +6,7 @@ Spring IOC的工作流程大致可以分为三个阶段。
 
 通过解析和加载后生成`BeanDefinition`，然后把`BeanDefinition`注册到`IOC`容器。
 
-![img_2.png](img_2.png)
+![img_5.png](img_5.png)
 
 通过`注解`或者`xml`声明的`bean`都会解析得到一个`BeanDefinition`实体，实体中包含这个`bean`中定义的基本属性。
 
