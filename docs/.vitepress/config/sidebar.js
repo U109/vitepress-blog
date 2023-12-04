@@ -71,6 +71,7 @@ export default {
                 {text: '自动配置相关问题', link: '/Java/SpringBoot/常见问题/自动配置相关问题'},
                 {text: '安全相关问题', link: '/Java/SpringBoot/常见问题/安全相关问题'},
                 {text: '监视器相关问题', link: '/Java/SpringBoot/常见问题/监视器相关问题'},
+                {text: '注解相关问题', link: '/Java/SpringBoot/常见问题/注解相关问题'},
             ],
         }
     ],
