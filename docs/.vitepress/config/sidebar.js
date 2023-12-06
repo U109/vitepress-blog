@@ -10,6 +10,26 @@ import Redis from "./sidebars/数据库/Redis/Redis";
 
 export default {
     '/Java/Java/生产环境下性能监控与调优/': MonitoringAndTuning,
+    '/Java/Java/常见问题/': [
+        {
+            text: '前置知识',
+            items: [
+                {text: '深入浅出JVM', link: '/Java/JVM/深入浅出JVM/JVM内存结构'},
+            ],
+        },
+        {
+            text: '单篇问题',
+            items: [
+                {text: 'Java中的对象一定是在堆上分配的吗', link: '/Java/JVM/常见问题/Java中的对象一定是在堆上分配的吗'},
+            ],
+        },
+        {
+            text: '问题合集',
+            items: [
+                {text: 'Java内存区域相关问题', link: '/Java/JVM/常见问题/Java内存区域相关问题'},
+            ],
+        }
+    ],
     '/Java/JVM/深入浅出JVM/': InDepthIntroductionToJVM,
     '/Java/JVM/常见问题/': [
         {
@@ -154,7 +174,7 @@ export default {
             ],
         }
     ],
-    '/框架配置/': FrameConfiguration,
+    '/开发技巧/框架配置/': FrameConfiguration,
     '/实战项目/Netty/仿写微信IM即时通讯系统/': IMSystem,
     '/实战项目/Java/监听MySQL的Binlog/': [
         {

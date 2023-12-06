@@ -10,6 +10,7 @@ export default [
                 text: "Java",
                 items: [
                     {text: "生产环境下性能监控与调优", link: "/Java/Java/生产环境下性能监控与调优/为什么要学习这课程",},
+                    {text: "常见问题", link: "/Java/JVM/常见问题/元空间会产生内存溢出么",}
                 ],
             },
             {
@@ -116,17 +117,17 @@ export default [
                 ],
             },
             {
+                text: "框架配置",
+                items: [
+                    {text: "VitePress博客", link: "/开发技巧/框架配置/VitePress/图片缩放功能",},
+                ],
+            },
+            {
                 text: "坏味道",
                 items: [
                     {text: "降低可读性", link: "/开发技巧/坏味道/降低代码可读性的12个技巧",},
                 ],
             },
-        ],
-    },
-    {
-        text: "框架配置",
-        items: [
-            {text: "VitePress博客", link: "/框架配置/VitePress/图片缩放功能",},
         ],
     },
     {
