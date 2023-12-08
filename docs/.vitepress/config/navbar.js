@@ -95,6 +95,7 @@ export default [
             {
                 text: "Java",
                 items: [
+                    {text: "数据库迁移", link: "/实战项目/Java/数据库迁移/数据迁移",},
                     {text: "监听MySQL的Binlog", link: "/实战项目/Java/监听MySQL的Binlog/Java监听MySQL的Binlog",},
                 ],
             },
@@ -148,7 +149,7 @@ export default [
         text: "资源搜罗",
         items: [
             {text: "机场", link: "/资源搜罗/VPN/机场",},
-            // {text: "神站", link: "/资源搜罗/神站/神站",},
+            {text: "音乐", link: "/资源搜罗/音乐/音乐",},
         ],
     },
 ];
