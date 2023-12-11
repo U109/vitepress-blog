@@ -52,6 +52,7 @@ export default [
             {
                 text: "分布式事务",
                 items: [
+                    {text: "一致性协议", link: "/分布式/协议/一致性协议/Paxos",},
                     {text: "常见问题", link: "/分布式/分布式事务/常见问题",},
                 ],
             },

@@ -144,6 +144,26 @@ export default {
         },
 
     ],
+    '/分布式/协议/一致性协议/': [
+        {
+            text: '前言',
+            // collapsed: true,
+            items: [
+                {text: 'CAP理论', link: '/分布式/协议/一致性协议/CAP理论'},
+            ],
+        },
+        {
+            text: '一致性协议',
+            // collapsed: true,
+            items: [
+                {text: '2PC', link: '/分布式/协议/一致性协议/2PC'},
+                {text: '3PC', link: '/分布式/协议/一致性协议/3PC'},
+                {text: 'Paxos协议', link: '/分布式/协议/一致性协议/Paxos'},
+                {text: 'Raft协议', link: '/分布式/协议/一致性协议/Raft协议'},
+                {text: 'ZAB协议', link: '/分布式/协议/一致性协议/ZAB协议'},
+            ],
+        },
+    ],
     '/数据库/书籍鉴赏/': HowDoesMySQLRun,
     '/数据库/MySQL/': MySQLQuestions,
     '/数据库/Redis/': Redis,
