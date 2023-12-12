@@ -151,7 +151,27 @@ export default {
             items: [
                 {text: '一图解读分布式事务', link: '/分布式/分布式事务/一图解读分布式事务'},
                 {text: '分布式事务的基本概念', link: '/分布式/分布式事务/分布式事务的基本概念'},
-                {text: 'CAP理论', link: '/分布式/分布式事务/协议/一致性协议/CAP理论'},
+                {text: 'CAP理论', link: '/分布式/分布式事务/CAP理论'},
+                {text: 'BASE理论', link: '/分布式/分布式事务/BASE理论'},
+                {text: '分布式事务分类：柔性事务和刚性事务', link: '/分布式/分布式事务/分布式事务分类'},
+                {text: '刚性事务:XA模型、XA接口规范、XA实现', link: '/分布式/分布式事务/刚性事务'},
+                {text: '柔性事务的分类', link: '/分布式/分布式事务/柔性事务的分类'},
+            ],
+        },
+        {
+            text: '刚性事务',
+            collapsed: true,
+            items: [
+                {text: '2PC(标准XA模型)', link: '/分布式/分布式事务/2PC'},
+                {text: '3PC', link: '/分布式/分布式事务/3PC'},
+            ],
+        },
+        {
+            text: '柔性事务',
+            collapsed: true,
+            items: [
+                {text: '2PC(标准XA模型)', link: '/分布式/分布式事务/2PC'},
+                {text: '3PC', link: '/分布式/分布式事务/3PC'},
             ],
         },
         {
