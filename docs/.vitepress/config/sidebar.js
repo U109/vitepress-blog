@@ -144,23 +144,25 @@ export default {
         },
 
     ],
-    '/分布式/协议/一致性协议/': [
+    '/分布式/分布式事务/': [
         {
-            text: '前言',
+            text: '分布式事务',
             // collapsed: true,
             items: [
-                {text: 'CAP理论', link: '/分布式/协议/一致性协议/CAP理论'},
+                {text: '一图解读分布式事务', link: '/分布式/分布式事务/一图解读分布式事务'},
+                {text: '分布式事务的基本概念', link: '/分布式/分布式事务/分布式事务的基本概念'},
+                {text: 'CAP理论', link: '/分布式/分布式事务/协议/一致性协议/CAP理论'},
             ],
         },
         {
             text: '一致性协议',
             // collapsed: true,
             items: [
-                {text: '2PC', link: '/分布式/协议/一致性协议/2PC'},
-                {text: '3PC', link: '/分布式/协议/一致性协议/3PC'},
-                {text: 'Paxos协议', link: '/分布式/协议/一致性协议/Paxos'},
-                {text: 'Raft协议', link: '/分布式/协议/一致性协议/Raft协议'},
-                {text: 'ZAB协议', link: '/分布式/协议/一致性协议/ZAB协议'},
+                {text: '2PC', link: '/分布式/分布式事务/协议/一致性协议/2PC'},
+                {text: '3PC', link: '/分布式/分布式事务/协议/一致性协议/3PC'},
+                {text: 'Paxos协议', link: '/分布式/分布式事务/协议/一致性协议/Paxos'},
+                {text: 'Raft协议', link: '/分布式/分布式事务/协议/一致性协议/Raft协议'},
+                {text: 'ZAB协议', link: '/分布式/分布式事务/协议/一致性协议/ZAB协议'},
             ],
         },
     ],
