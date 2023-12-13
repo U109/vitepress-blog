@@ -126,6 +126,7 @@ export default [
             {
                 text: "框架配置",
                 items: [
+                    {text: "IDEA远程Debug", link: "/开发技巧/框架配置/IDEA/IDEA远程Debug",},
                     {text: "VitePress博客", link: "/开发技巧/框架配置/VitePress/图片缩放功能",},
                 ],
             },

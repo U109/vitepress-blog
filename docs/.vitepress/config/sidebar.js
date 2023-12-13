@@ -147,7 +147,7 @@ export default {
     '/分布式/分布式事务/': [
         {
             text: '分布式事务',
-            // collapsed: true,
+            collapsed: true,
             items: [
                 {text: '一图解读分布式事务', link: '/分布式/分布式事务/一图解读分布式事务'},
                 {text: '分布式事务的基本概念', link: '/分布式/分布式事务/分布式事务的基本概念'},
@@ -170,13 +170,18 @@ export default {
             text: '柔性事务',
             collapsed: true,
             items: [
-                {text: '2PC(标准XA模型)', link: '/分布式/分布式事务/2PC'},
-                {text: '3PC', link: '/分布式/分布式事务/3PC'},
+                {
+                    text: '通知型事务',
+                    items: [
+                        {text: '异步确保型事务', link: '/分布式/分布式事务/异步确保型事务'},
+                        {text: '最大努力通知事务', link: '/分布式/分布式事务/最大努力通知事务'},
+                    ],
+                },
             ],
         },
         {
             text: '一致性协议',
-            // collapsed: true,
+            collapsed: true,
             items: [
                 {text: '2PC', link: '/分布式/分布式事务/协议/一致性协议/2PC'},
                 {text: '3PC', link: '/分布式/分布式事务/协议/一致性协议/3PC'},
