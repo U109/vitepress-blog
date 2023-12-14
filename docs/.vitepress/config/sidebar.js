@@ -156,6 +156,7 @@ export default {
                 {text: '分布式事务分类：柔性事务和刚性事务', link: '/分布式/分布式事务/分布式事务分类'},
                 {text: '刚性事务:XA模型、XA接口规范、XA实现', link: '/分布式/分布式事务/刚性事务'},
                 {text: '柔性事务的分类', link: '/分布式/分布式事务/柔性事务的分类'},
+                {text: '总体的方案对比', link: '/分布式/分布式事务/总体的方案对比'},
             ],
         },
         {
@@ -187,6 +188,17 @@ export default {
             ],
         },
         {
+            text: 'Seata',
+            collapsed: true,
+            items: [
+                {text: 'Seata简介', link: '/分布式/分布式事务/Seata简介'},
+                {text: 'Seata AT模式', link: '/分布式/分布式事务/Seata-AT模式'},
+                {text: 'Seata TCC模式', link: '/分布式/分布式事务/Seata-TCC模式'},
+                {text: 'Seata Saga模式', link: '/分布式/分布式事务/Seata-Saga模式'},
+                {text: 'Seata XA模式', link: '/分布式/分布式事务/Seata-XA模式'},
+            ],
+        },
+        {
             text: '一致性协议',
             collapsed: true,
             items: [
@@ -195,6 +207,14 @@ export default {
                 {text: 'Paxos协议', link: '/分布式/分布式事务/协议/一致性协议/Paxos'},
                 {text: 'Raft协议', link: '/分布式/分布式事务/协议/一致性协议/Raft协议'},
                 {text: 'ZAB协议', link: '/分布式/分布式事务/协议/一致性协议/ZAB协议'},
+            ],
+        },
+        {
+            text: '常见问题',
+            collapsed: true,
+            items: [
+                {text: '如何解决分布式事务问题', link: '/分布式/分布式事务/常见问题/如何解决分布式事务问题'},
+                {text: '3PC', link: '/分布式/分布式事务/3PC'},
             ],
         },
     ],
