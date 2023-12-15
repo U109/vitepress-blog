@@ -14,19 +14,18 @@ export default {
         {
             text: '前置知识',
             items: [
-                {text: '深入浅出JVM', link: '/Java/JVM/深入浅出JVM/JVM内存结构'},
+
             ],
         },
         {
             text: '单篇问题',
             items: [
-                {text: 'Java中的对象一定是在堆上分配的吗', link: '/Java/JVM/常见问题/Java中的对象一定是在堆上分配的吗'},
             ],
         },
         {
             text: '问题合集',
             items: [
-                {text: 'Java内存区域相关问题', link: '/Java/JVM/常见问题/Java内存区域相关问题'},
+                {text: 'Java概述', link: '/Java/Java/常见问题/Java概述'},
             ],
         }
     ],
@@ -119,10 +118,11 @@ export default {
             text: '消息队列',
             // collapsed: true,
             items: [
+                {text: 'RabbitMQ', link: '/分布式/消息队列/常见问题/RabbitMQ'},
                 {text: '为什么使用消息队列', link: '/分布式/消息队列/常见问题/为什么使用消息队列'},
                 {text: '如何保证消息队列的高可用', link: '/分布式/消息队列/常见问题/如何保证消息队列的高可用'},
             ],
-        }
+        },
     ],
     '/分布式/高并发系统/高并发系统设计40问/': Questions,
     '/分布式/分布式事务/常见问题/': [

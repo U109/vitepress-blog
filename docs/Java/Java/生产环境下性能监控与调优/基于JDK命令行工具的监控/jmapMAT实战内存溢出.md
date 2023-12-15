@@ -18,7 +18,7 @@
 
 - 依赖：Web 模块
 
-也就是说是一个简单的 Spring boot Web 项目，[这是笔者准备好的仓库](https://github.com/zq99299/monitor-tuning)
+也就是说是一个简单的 Spring boot Web 项目
 
 ### 制造堆内存溢出
 
@@ -305,7 +305,7 @@ Deleting expired sessions...none found.
 ![image-20210117134137828](./assets/image-20210117134137828.png)
 
 - A 区的描述：`MemoryController` 这个实例类，占用了 57.76% 的内存，一下就定位到了我们的问题发生地区
-- B 区的描述：有 1881 个实例是 Class，是被 system class loader 加载的，占用了 17.57% 的内存。 这里是正常的
+- B 区的描述：有 4881 个实例是 Class，是被 system class loader 加载的，占用了 17.57% 的内存。 这里是正常的
 
 ### 工具功能介绍
 

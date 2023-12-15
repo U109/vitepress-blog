@@ -10,7 +10,7 @@ export default [
                 text: "Java",
                 items: [
                     {text: "生产环境下性能监控与调优", link: "/Java/Java/生产环境下性能监控与调优/为什么要学习这课程",},
-                    {text: "常见问题", link: "/Java/JVM/常见问题/元空间会产生内存溢出么",}
+                    {text: "常见问题", link: "/Java/Java/常见问题/Java概述",}
                 ],
             },
             {
@@ -102,6 +102,7 @@ export default [
                     {text: "仿写微信IM即时通讯系统", link: "/实战项目/Netty/仿写微信IM即时通讯系统/仿微信IM系统简介",},
                 ],
             },
+            {text: "12306抢票亿级流量架构演进", link: "/实战项目/12306抢票亿级流量架构演进",},
         ],
     },
     {
