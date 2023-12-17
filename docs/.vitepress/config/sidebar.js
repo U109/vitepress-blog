@@ -26,6 +26,7 @@ export default {
             text: '问题合集',
             items: [
                 {text: 'Java概述', link: '/Java/Java/常见问题/Java概述'},
+                {text: '面向对象', link: '/Java/Java/常见问题/面向对象'},
             ],
         }
     ],
