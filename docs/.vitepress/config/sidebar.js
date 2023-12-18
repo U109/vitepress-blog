@@ -219,6 +219,15 @@ export default {
             ],
         },
     ],
+    '/分布式/分布式锁/':[
+        {
+            text: '分布式锁',
+            collapsed: true,
+            items: [
+                {text: '跨JVM的线程安全问题', link: '/分布式/分布式锁/跨JVM的线程安全问题'},
+            ],
+        },
+    ],
     '/数据库/书籍鉴赏/': HowDoesMySQLRun,
     '/数据库/MySQL/': MySQLQuestions,
     '/数据库/Redis/': Redis,

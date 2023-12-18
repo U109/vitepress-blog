@@ -19,6 +19,3 @@
 JVM & JRE & JDK关系图
 
 ![img.png](img.png)
-
-
-
