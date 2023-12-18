@@ -227,6 +227,15 @@ export default {
                 {text: '跨JVM的线程安全问题', link: '/分布式/分布式锁/跨JVM的线程安全问题'},
             ],
         },
+        {
+            text: '基于Redis实现',
+            collapsed: true,
+            items: [
+                {text: '基于Jedis的API实现分布式锁', link: '/分布式/分布式锁/基于Jedis的API实现分布式锁'},
+                {text: '基于Lua脚本实现分布式锁', link: '/分布式/分布式锁/基于Lua脚本实现分布式锁'},
+                {text: 'STW导致的锁过期问题', link: '/分布式/分布式锁/STW导致的锁过期问题'},
+            ],
+        },
     ],
     '/数据库/书籍鉴赏/': HowDoesMySQLRun,
     '/数据库/MySQL/': MySQLQuestions,
