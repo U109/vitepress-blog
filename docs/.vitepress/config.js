@@ -30,6 +30,7 @@ export default {
         },
     },
     themeConfig: {
+
         siteTitle: 'Zhen',
         logo: '/index/小猪佩奇.png',
         /* 头部导航 */
@@ -40,6 +41,9 @@ export default {
             { icon: 'twitter', link: 'https://twitter.com/StewardPeg5' },
             {icon: 'github', link: 'https://github.com/U109'},
         ],
+        search: {
+            provider: 'local',
+        },
         /* 侧边导航 */
         sidebar,
         outline: {
