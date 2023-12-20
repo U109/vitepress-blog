@@ -14,6 +14,12 @@ export default [
                 ],
             },
             {
+                text: "JUC",
+                items: [
+                    {text: "JUC并发包与容器类", link: "/Java/JUC/JUC并发包与容器类/内存可见性指令有序性理论",},
+                ],
+            },
+            {
                 text: "JVM",
                 items: [
                     {text: "深入浅出JVM", link: "/Java/JVM/深入浅出JVM/JVM内存结构",},

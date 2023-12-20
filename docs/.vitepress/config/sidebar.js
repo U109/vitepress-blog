@@ -32,6 +32,19 @@ export default {
             ],
         }
     ],
+    '/Java/JUC/JUC并发包与容器类/': [
+        {
+            text: '单篇问题',
+            items: [
+            ],
+        },
+        {
+            text: '问题合集',
+            items: [
+                {text: '内存可见性、指令有序性理论', link: '/Java/JUC/JUC并发包与容器类/内存可见性指令有序性理论'},
+            ],
+        }
+    ],
     '/Java/JVM/深入浅出JVM/': InDepthIntroductionToJVM,
     '/Java/JVM/常见问题/': [
         {
