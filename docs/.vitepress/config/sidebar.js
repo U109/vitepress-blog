@@ -7,6 +7,8 @@ import MySQLQuestions from "./sidebars/数据库/MySQL/MySQLQuestions";
 import HowDoesMySQLRun from "./sidebars/数据库/书籍鉴赏/HowDoesMySQLRun";
 import VPN from "./sidebars/资源搜罗/VPN";
 import Redis from "./sidebars/数据库/Redis/Redis";
+import DistributedLocks from "./sidebars/分布式/分布式锁/DistributedLocks";
+import DistributedTransactions from "./sidebars/分布式/分布式事务/DistributedTransactions";
 
 export default {
     '/Java/Java/生产环境下性能监控与调优/': MonitoringAndTuning,
@@ -145,118 +147,8 @@ export default {
         },
 
     ],
-    '/分布式/分布式事务/': [
-        {
-            text: '分布式事务',
-            collapsed: true,
-            items: [
-                {text: '一图解读分布式事务', link: '/分布式/分布式事务/一图解读分布式事务'},
-                {text: '分布式事务的基本概念', link: '/分布式/分布式事务/分布式事务的基本概念'},
-                {text: 'CAP理论', link: '/分布式/分布式事务/CAP理论'},
-                {text: 'BASE理论', link: '/分布式/分布式事务/BASE理论'},
-                {text: '分布式事务分类：柔性事务和刚性事务', link: '/分布式/分布式事务/分布式事务分类'},
-                {text: '刚性事务:XA模型、XA接口规范、XA实现', link: '/分布式/分布式事务/刚性事务'},
-                {text: '柔性事务的分类', link: '/分布式/分布式事务/柔性事务的分类'},
-                {text: '总体的方案对比', link: '/分布式/分布式事务/总体的方案对比'},
-            ],
-        },
-        {
-            text: '刚性事务',
-            collapsed: true,
-            items: [
-                {text: '2PC(标准XA模型)', link: '/分布式/分布式事务/2PC'},
-                {text: '3PC', link: '/分布式/分布式事务/3PC'},
-            ],
-        },
-        {
-            text: '柔性事务',
-            collapsed: true,
-            items: [
-                {
-                    text: '通知型事务',
-                    items: [
-                        {text: '异步确保型事务', link: '/分布式/分布式事务/异步确保型事务'},
-                        {text: '最大努力通知事务', link: '/分布式/分布式事务/最大努力通知事务'},
-                    ],
-                },
-                {
-                    text: '补偿型事务',
-                    items: [
-                        {text: 'TCC事务模型', link: '/分布式/分布式事务/TCC事务模型'},
-                        {text: 'SAGA长事务模型', link: '/分布式/分布式事务/SAGA长事务模型'},
-                    ],
-                },
-            ],
-        },
-        {
-            text: 'Seata',
-            collapsed: true,
-            items: [
-                {text: 'Seata简介', link: '/分布式/分布式事务/Seata简介'},
-                {text: 'Seata AT模式', link: '/分布式/分布式事务/Seata-AT模式'},
-                {text: 'Seata TCC模式', link: '/分布式/分布式事务/Seata-TCC模式'},
-                {text: 'Seata Saga模式', link: '/分布式/分布式事务/Seata-Saga模式'},
-                {text: 'Seata XA模式', link: '/分布式/分布式事务/Seata-XA模式'},
-            ],
-        },
-        {
-            text: '一致性协议',
-            collapsed: true,
-            items: [
-                {text: '2PC', link: '/分布式/分布式事务/协议/一致性协议/2PC'},
-                {text: '3PC', link: '/分布式/分布式事务/协议/一致性协议/3PC'},
-                {text: 'Paxos协议', link: '/分布式/分布式事务/协议/一致性协议/Paxos'},
-                {text: 'Raft协议', link: '/分布式/分布式事务/协议/一致性协议/Raft协议'},
-                {text: 'ZAB协议', link: '/分布式/分布式事务/协议/一致性协议/ZAB协议'},
-            ],
-        },
-        {
-            text: '常见问题',
-            collapsed: true,
-            items: [
-                {text: '如何解决分布式事务问题', link: '/分布式/分布式事务/常见问题/如何解决分布式事务问题'},
-                {text: '3PC', link: '/分布式/分布式事务/3PC'},
-            ],
-        },
-    ],
-    '/分布式/分布式锁/':[
-        {
-            text: '分布式锁',
-            collapsed: true,
-            items: [
-                {text: '跨JVM的线程安全问题', link: '/分布式/分布式锁/跨JVM的线程安全问题'},
-            ],
-        },
-        {
-            text: '基于Redis实现',
-            collapsed: true,
-            items: [
-                {text: '基于Jedis的API实现分布式锁', link: '/分布式/分布式锁/基于Jedis的API实现分布式锁'},
-                {text: '基于Lua脚本实现分布式锁', link: '/分布式/分布式锁/基于Lua脚本实现分布式锁'},
-                {text: 'STW导致的锁过期问题', link: '/分布式/分布式锁/STW导致的锁过期问题'},
-                {text: 'Redis实现分布式锁的7种方案', link: '/数据库/Redis/进阶问题/Redis实现分布式锁的7种方案'},
-            ],
-        },
-        {
-            text: '基于Zookeeper实现',
-            collapsed: true,
-            items: [
-                {text: '公平锁和可重入锁的原理', link: '/分布式/分布式锁/Zookeeper/公平锁和可重入锁的原理'},
-                {text: 'ZooKeeper分布式锁的原理', link: '/分布式/分布式锁/Zookeeper/ZooKeeper分布式锁的原理'},
-                {text: '分布式锁的抢占过程', link: '/分布式/分布式锁/Zookeeper/分布式锁的抢占过程'},
-                {text: '分布式锁的基本实现', link: '/分布式/分布式锁/Zookeeper/分布式锁的基本实现'},
-                {text: '加锁的实现', link: '/分布式/分布式锁/Zookeeper/加锁的实现'},
-            ],
-        },
-        {
-            text: 'Redisson',
-            collapsed: true,
-            items: [
-                {text: 'Redisson简介', link: '/分布式/分布式锁/Redisson/Redisson简介'},
-                {text: 'Redisson的使用', link: '/分布式/分布式锁/Redisson/Redisson的使用'},
-            ],
-        },
-    ],
+    '/分布式/分布式事务/': DistributedTransactions,
+    '/分布式/分布式锁/': DistributedLocks,
     '/数据库/书籍鉴赏/': HowDoesMySQLRun,
     '/数据库/MySQL/': MySQLQuestions,
     '/数据库/Redis/': Redis,

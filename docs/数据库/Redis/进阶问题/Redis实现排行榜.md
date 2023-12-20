@@ -9,7 +9,7 @@
 
 **表结构**
 
-```mysql
+```sql
 CREATE TABLE `user` (
   `id` int(10) NOT NULL COMMENT '编号',
   `uid` varchar(32) NOT NULL COMMENT '用户',
@@ -23,7 +23,7 @@ CREATE TABLE `user` (
 
 ### 1. sql查询
 
-```mysql
+```sql
 EXPLAIN SELECT
     *
 FROM
@@ -56,7 +56,7 @@ WHERE
 
 **zset的相关api (PipelineCluster/Jedis) : **
 
-```redis
+```shell
 插入或者更新数据
 Long zadd(final String key, final double score, final String member)
 key : 排行榜的名字
