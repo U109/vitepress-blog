@@ -246,6 +246,10 @@ export default {
                 {text: '分布式锁的抢占过程', link: '/分布式/分布式锁/Zookeeper/分布式锁的抢占过程'},
                 {text: '分布式锁的基本实现', link: '/分布式/分布式锁/Zookeeper/分布式锁的基本实现'},
                 {text: '加锁的实现', link: '/分布式/分布式锁/Zookeeper/加锁的实现'},
+                {text: '释放锁的实现', link: '/分布式/分布式锁/Zookeeper/释放锁的实现'},
+                {text: '分布式锁的使用', link: '/分布式/分布式锁/Zookeeper/分布式锁的使用'},
+                {text: 'curator的InterProcessMutex可重入锁', link: '/分布式/分布式锁/Zookeeper/curator的InterProcessMutex可重入锁'},
+                {text: 'ZooKeeper分布式锁的优点和缺点', link: '/分布式/分布式锁/Zookeeper/ZooKeeper分布式锁的优点和缺点'},
             ],
         },
         {
