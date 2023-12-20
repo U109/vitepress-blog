@@ -1,0 +1,113 @@
+const DistributedLocks = [
+    {
+        text: '分布式锁',
+        collapsed: true,
+        items: [
+            {text: '跨JVM的线程安全问题', link: '/分布式/分布式锁/跨JVM的线程安全问题'},
+        ],
+    },
+    {
+        text: '基于Redis实现',
+        collapsed: true,
+        items: [
+            {text: '基于Jedis的API实现分布式锁', link: '/分布式/分布式锁/基于Jedis的API实现分布式锁'},
+            {text: '基于Lua脚本实现分布式锁', link: '/分布式/分布式锁/基于Lua脚本实现分布式锁'},
+            {text: 'STW导致的锁过期问题', link: '/分布式/分布式锁/STW导致的锁过期问题'},
+            {text: 'Redis实现分布式锁的7种方案', link: '/数据库/Redis/进阶问题/Redis实现分布式锁的7种方案'},
+        ],
+    },
+    {
+        text: '基于Zookeeper实现',
+        collapsed: true,
+        items: [
+            {text: '公平锁和可重入锁的原理', link: '/分布式/分布式锁/Zookeeper/公平锁和可重入锁的原理'},
+            {text: 'ZooKeeper分布式锁的原理', link: '/分布式/分布式锁/Zookeeper/ZooKeeper分布式锁的原理'},
+            {text: '分布式锁的抢占过程', link: '/分布式/分布式锁/Zookeeper/分布式锁的抢占过程'},
+            {text: '分布式锁的基本实现', link: '/分布式/分布式锁/Zookeeper/分布式锁的基本实现'},
+            {text: '加锁的实现', link: '/分布式/分布式锁/Zookeeper/加锁的实现'},
+        ],
+    },
+    {
+        text: 'Redisson',
+        collapsed: true,
+        items: [
+            {text: '1、项目介绍', link: '/分布式/分布式锁/Redisson/1/项目介绍'},
+            {text: '2、概述', link: '/分布式/分布式锁/Redisson/2/概述'},
+            {
+                text: '3、配置方法',
+                link: '/分布式/分布式锁/Redisson/3/配置方法',
+                collapsed: true,
+                items: [
+                    {text: '3.1、程序化配置方法', link: '/分布式/分布式锁/Redisson/3/程序化配置方法'},
+                    {text: '3.2、文件方式配置', link: '/分布式/分布式锁/Redisson/3/文件方式配置'},
+                    {text: '3.3、常用设置', link: '/分布式/分布式锁/Redisson/3/常用设置'},
+                    {text: '3.4、集群模式', link: '/分布式/分布式锁/Redisson/3/集群模式'},
+                    {text: '3.5、云托管模式', link: '/分布式/分布式锁/Redisson/3/云托管模式'},
+                    {text: '3.6、单Redis节点模式', link: '/分布式/分布式锁/Redisson/3/单Redis节点模式'},
+                    {text: '3.7、哨兵模式', link: '/分布式/分布式锁/Redisson/3/哨兵模式'},
+                    {text: '3.8、主从模式', link: '/分布式/分布式锁/Redisson/3/主从模式'},
+                ],
+            },
+            {
+                text: '4、程序接口调用方式',
+                link: '/分布式/分布式锁/Redisson/4/程序接口调用方式',
+                collapsed: true,
+                items: [
+                    {text: '4.1、异步执行方式', link: '/分布式/分布式锁/Redisson/4/异步执行方式'},
+                    {text: '4.2、程序化配置方法', link: '/分布式/分布式锁/Redisson/4/异步流执行方式'},
+                ],
+            },
+            {text: '5、数据序列化', link: '/分布式/分布式锁/Redisson/5/数据序列化'},
+            {text: '6、单个集合数据分片(Sharding)', link: '/分布式/分布式锁/Redisson/6/单个集合数据分片'},
+            {
+                text: '7、分布式对象',
+                link: '/分布式/分布式锁/Redisson/7/分布式对象',
+                collapsed: true,
+                items: [
+                    {text: '7.1、通用对象桶', link: '/分布式/分布式锁/Redisson/7/通用对象桶'},
+                    {text: '7.2、二进制流', link: '/分布式/分布式锁/Redisson/7/二进制流'},
+                    {text: '7.3、地理空间对象桶', link: '/分布式/分布式锁/Redisson/7/地理空间对象桶'},
+                    {text: '7.4、BitSet', link: '/分布式/分布式锁/Redisson/7/BitSet'},
+                    {text: '7.5、原子整长形', link: '/分布式/分布式锁/Redisson/7/原子整长形'},
+                    {text: '7.6、原子双精度浮点', link: '/分布式/分布式锁/Redisson/7/原子双精度浮点'},
+                    {text: '7.7、话题', link: '/分布式/分布式锁/Redisson/7/话题'},
+                    {text: '7.8、布隆过滤器', link: '/分布式/分布式锁/Redisson/7/布隆过滤器'},
+                    {text: '7.9、基数估计算法', link: '/分布式/分布式锁/Redisson/7/基数估计算法'},
+                    {text: '7.10、整长型累加器', link: '/分布式/分布式锁/Redisson/7/整长型累加器'},
+                    {text: '7.11、双精度浮点累加器', link: '/分布式/分布式锁/Redisson/7/双精度浮点累加器'},
+                    {text: '7.12、限流器', link: '/分布式/分布式锁/Redisson/7/限流器'},
+                ],
+            },
+            {
+                text: '8、分布式集合',
+                link: '/分布式/分布式锁/Redisson/8/分布式集合',
+                collapsed: true,
+                items: [
+                    {text: '8.1、映射', link: '/分布式/分布式锁/Redisson/8/映射'},
+                    {text: '8.2、多值映射', link: '/分布式/分布式锁/Redisson/8/多值映射'},
+                    {text: '8.3、集', link: '/分布式/分布式锁/Redisson/8/集'},
+                    {text: '8.4、有序集', link: '/分布式/分布式锁/Redisson/8/有序集'},
+                    {text: '8.5、计分排序集', link: '/分布式/分布式锁/Redisson/8/计分排序集'},
+                    {text: '8.6、字典排序集', link: '/分布式/分布式锁/Redisson/8/字典排序集'},
+                    {text: '8.7、列表', link: '/分布式/分布式锁/Redisson/8/列表'},
+                    {text: '8.8、队列', link: '/分布式/分布式锁/Redisson/8/队列'},
+                    {text: '8.9、双端队列', link: '/分布式/分布式锁/Redisson/8/双端队列'},
+                    {text: '8.10、阻塞队列', link: '/分布式/分布式锁/Redisson/8/阻塞队列'},
+                    {text: '8.11、有界阻塞队列', link: '/分布式/分布式锁/Redisson/8/有界阻塞队列'},
+                    {text: '8.12、阻塞双端队列', link: '/分布式/分布式锁/Redisson/8/阻塞双端队列'},
+                    {text: '8.13、阻塞公平队列', link: '/分布式/分布式锁/Redisson/8/阻塞公平队列'},
+                    {text: '8.14、阻塞公平双端队列', link: '/分布式/分布式锁/Redisson/8/阻塞公平双端队列'},
+                    {text: '8.15、延迟队列', link: '/分布式/分布式锁/Redisson/8/延迟队列'},
+                    {text: '8.16、优先队列', link: '/分布式/分布式锁/Redisson/8/优先队列'},
+                    {text: '8.17、优先双端队列', link: '/分布式/分布式锁/Redisson/8/优先双端队列'},
+                    {text: '8.18、优先阻塞队列', link: '/分布式/分布式锁/Redisson/8/优先阻塞队列'},
+                    {text: '8.19、优先阻塞双端队列', link: '/分布式/分布式锁/Redisson/8/优先阻塞双端队列'},
+                ],
+            },
+            {text: '7、分布式对象', link: '/分布式/分布式锁/Redisson/7/分布式对象'},
+        ],
+    },
+]
+
+
+export default DistributedLocks;

@@ -25,7 +25,7 @@
 
 ### 访问redis
 
-```redis
+```shell
 redis-cli -h 127.0.0.1 -p 6379
 ```
 
@@ -33,7 +33,7 @@ redis-cli -h 127.0.0.1 -p 6379
 
 keys * 获取所有的key
 
-```redis
+```shell
 select 0 选择第一个库
 move myString 1 将当前的数据库key移动到某个数据库,目标库有，则不能移动
 flush db      清除指定库
@@ -52,7 +52,7 @@ persist key     删除过期时间
 
 ### string
 
-```redis
+```shell
 set name cxx
 get name
 getrange name 0 -1        字符串分段
@@ -74,7 +74,7 @@ getbit/setbit/bitcount/bitop    位操作
 
 ### hash
 
-```redis
+```shell
 hset myhash name cxx
 hget myhash name
 hmset myhash name cxx age 25 note "i am notes"
@@ -91,7 +91,7 @@ hlen myhash                  长度
 
 ### list
 
-```redis
+```shell
 lpush mylist a b c  左插入
 rpush mylist x y z  右插入
 lrange mylist 0 -1  数据集合
@@ -109,7 +109,7 @@ rpoplpush list list2     转移列表的数据
 
 ### set
 
-```redis
+```shell
 sadd myset redis
 smembers myset       数据集合
 srem myset set1         删除
@@ -122,7 +122,7 @@ spop                 从集合中弹出一个元素
 
 ### zset
 
-```redis
+```shell
 zadd zset 1 one
 zadd zset 2 two
 zadd zset 3 three
@@ -145,7 +145,7 @@ zunionstore rank:last_week 7 rank:20150323 rank:20150324 rank:20150325  weights 
 
 ### 排序：
 
-```redis
+```shell
 sort mylist  排序
 sort mylist alpha desc limit 0 2 字母排序
 sort list by it:* desc           by命令
@@ -155,7 +155,7 @@ sort list by it:* desc get it:* store sorc:result  sort命令之store参数：�
 
 ### 订阅与发布：
 
-```redis
+```shell
 订阅频道：subscribe chat1
 发布消息：publish chat1 "hell0 ni hao"
 查看频道：pubsub channels
@@ -169,7 +169,7 @@ sort list by it:* desc get it:* store sorc:result  sort命令之store参数：�
 * 隔离性，原子性，
 
 步骤：  开始事务，执行命令，提交事务
-```redis
+```shell
 multi  //开启事务
 sadd myset a b c
 sadd myset e f g
@@ -179,7 +179,7 @@ lpush mylist dd ff gg
 
 ## 服务器管理
 
-```redis
+```shell
 dump.rdb
 appendonly.aof
 //BgRewriteAof 异步执行一个aop(appendOnly file)文件重写
@@ -201,7 +201,7 @@ config get port
 
 ## aop备份处理
 
-```redis
+```shell
 appendonly yes    开启持久化
 appendfsync everysec  每秒备份一次
 ```

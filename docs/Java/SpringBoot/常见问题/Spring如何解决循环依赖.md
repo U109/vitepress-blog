@@ -479,7 +479,8 @@ protected Object doCreateBean( ... ){
 
 若是这种case：代理对象，但是自己并不存在循环依赖，过程稍微有点不一样儿了，如下描述：
 
-```protected Object doCreateBean( ... ) {
+```java
+protected Object doCreateBean( ... ) {
 		...
 		// 这些语句依旧会执行，三级缓存里是会加入的  表示它支持被循环引用嘛~~~
 		addSingletonFactory(beanName, () -> getEarlyBeanReference(beanName, mbd, bean));
