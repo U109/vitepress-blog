@@ -29,17 +29,29 @@ export default {
             items: [
                 {text: 'Java概述', link: '/Java/Java/常见问题/Java概述'},
                 {text: '面向对象', link: '/Java/Java/常见问题/面向对象'},
+                {text: '基础语法', link: '/Java/Java/常见问题/基础语法'},
             ],
         }
     ],
-    '/Java/JUC/JUC并发包与容器类/': [
+    '/Java/JUC/': [
         {
-            text: '单篇问题',
+            text: '并发编程',
+            collapsed: true,
             items: [
+                {text: '并发编程（一）', link: '/Java/JUC/并发编程/并发编程一'},
+                {text: '并发编程（二）', link: '/Java/JUC/并发编程/并发编程二'},
+            ],
+        },{
+            text: '并发理论',
+            collapsed: true,
+            items: [
+                {text: '并发理论（一）', link: '/Java/JUC/并发理论/并发理论一'},
+                {text: '并发理论（二）', link: '/Java/JUC/并发理论/并发理论二'},
             ],
         },
         {
-            text: '问题合集',
+            text: 'JUC并发包与容器类',
+            collapsed: true,
             items: [
                 {text: '内存可见性、指令有序性理论', link: '/Java/JUC/JUC并发包与容器类/内存可见性指令有序性理论'},
             ],

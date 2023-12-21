@@ -16,7 +16,7 @@ export default [
             {
                 text: "JUC",
                 items: [
-                    {text: "JUC并发包与容器类", link: "/Java/JUC/JUC并发包与容器类/内存可见性指令有序性理论",},
+                    {text: "并发编程", link: "/Java/JUC/JUC并发包与容器类/内存可见性指令有序性理论",},
                 ],
             },
             {

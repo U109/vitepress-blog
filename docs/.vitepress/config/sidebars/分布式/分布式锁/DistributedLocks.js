@@ -28,7 +28,18 @@ const DistributedLocks = [
         ],
     },
     {
-        text: 'Redisson',
+        text: '基于Redisson实现',
+        collapsed: true,
+        items: [
+            {text: '简单Redisson锁的原理', link: '/分布式/分布式锁/基于Redisson实现/简单Redisson锁的原理'},
+            {text: '使用watchDog机制实现锁的续期', link: '/分布式/分布式锁/基于Redisson实现/使用watchDog机制实现锁的续期'},
+            {text: 'Redisson框架的分布式锁', link: '/分布式/分布式锁/基于Redisson实现/Redisson框架的分布式锁'},
+            {text: 'Redis分布式锁的高可用', link: '/分布式/分布式锁/基于Redisson实现/Redis分布式锁的高可用'},
+            {text: 'Redis分段锁', link: '/分布式/分布式锁/基于Redisson实现/Redis分段锁'},
+        ],
+    },
+    {
+        text: 'Redisson使用手册',
         collapsed: true,
         items: [
             {text: '1、项目介绍', link: '/分布式/分布式锁/Redisson/1/项目介绍'},
@@ -58,7 +69,7 @@ const DistributedLocks = [
                 ],
             },
             {text: '5、数据序列化', link: '/分布式/分布式锁/Redisson/5/数据序列化'},
-            {text: '6、单个集合数据分片(Sharding)', link: '/分布式/分布式锁/Redisson/6/单个集合数据分片'},
+            {text: '6、单个集合数据分片', link: '/分布式/分布式锁/Redisson/6/单个集合数据分片'},
             {
                 text: '7、分布式对象',
                 link: '/分布式/分布式锁/Redisson/7/分布式对象',
