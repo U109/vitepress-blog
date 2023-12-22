@@ -43,12 +43,19 @@ export default [
     {
         text: "分布式",
         items: [
+            {text: "思维导图", link: "/分布式/思维导图/三高系统",},
             {text: "分布式锁", link: "/分布式/分布式锁/跨JVM的线程安全问题",},
             {text: "分布式事务", link: "/分布式/分布式事务/一图解读分布式事务",},
             {
                 text: "消息队列",
                 items: [
                     {text: "常见问题", link: "/分布式/消息队列/常见问题/为什么使用消息队列",},
+                ],
+            },
+            {
+                text: "系统设计",
+                items: [
+                    {text: "限流", link: "/分布式/系统设计/限流/限流的算法",},
                 ],
             },
             {
@@ -111,7 +118,7 @@ export default [
         ],
     },
     {
-        text: "开发技巧",
+        text: "开发知识",
         items: [
             {
                 text: "算法",
@@ -131,12 +138,6 @@ export default [
                 items: [
                     {text: "IDEA远程Debug", link: "/开发技巧/框架配置/IDEA/IDEA远程Debug",},
                     {text: "VitePress博客", link: "/开发技巧/框架配置/VitePress/图片缩放功能",},
-                ],
-            },
-            {
-                text: "坏味道",
-                items: [
-                    {text: "降低可读性", link: "/开发技巧/坏味道/降低代码可读性的12个技巧",},
                 ],
             },
         ],

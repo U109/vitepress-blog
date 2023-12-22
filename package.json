@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "medium-zoom": "^1.0.8",
-    "vitepress-markdown-timeline": "^1.2.1"
+    "vitepress-markdown-timeline": "^1.2.1",
+    "xmind-embed-viewer": "^1.2.0"
   }
 }

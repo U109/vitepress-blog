@@ -7,6 +7,7 @@ import mediumZoom from 'medium-zoom'
 import './global.css'
 import './style/var.css'
 
+
 export default {
     ...DefaultTheme,
     setup() {
