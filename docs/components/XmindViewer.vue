@@ -33,6 +33,7 @@ onMounted(async () => {
   fetch(props.url)
       .then(res => res.arrayBuffer())
       .then(file => {
+        console.log(file)
         viewer.load(file)
       })
       .catch(err => {
