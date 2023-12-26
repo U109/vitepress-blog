@@ -6,7 +6,7 @@
 
 有一个生产者，一个`fanout`模式的交换机绑定了两个临时队列，然后分别对应了两个消费者。
 
-**生产者：**
+## 生产者Producer
 
 ```java
 package mode2_WorkQueues.exchange;
@@ -31,7 +31,7 @@ public class Producer {
 }
 ```
 
-**消费者1：**
+## 消费者Consumer01
 
 ```java
 package mode2_WorkQueues.exchange;
@@ -64,7 +64,7 @@ public class Consumer01 {
 }
 ```
 
-**消费者2：**
+## 消费者Consumer02
 
 ```java
 package mode2_WorkQueues.exchange;
@@ -96,6 +96,8 @@ public class Consumer02 {
     }
 }
 ```
+
+## 测试
 
 然后运行测试，分别启动`consumer01`、`consumer02`，然后启动`producer`发送10条消息
 

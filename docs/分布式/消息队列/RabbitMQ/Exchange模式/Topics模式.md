@@ -36,9 +36,7 @@ quick.orange.male.rabbit	是四个单词不匹配任何绑定会被丢弃
 lazy.orange.male.rabbit		是四个单词但匹配 Q2
 ```
 
-**代码实现**
-
-生产者Producer：
+## 生产者Producer
 
 ```java
 package mode2_WorkQueues.exchange.topic;
@@ -77,7 +75,7 @@ public class Producer {
 }
 ```
 
-消费者Consumer01：
+## 消费者Consumer01
 
 ```java
 package mode2_WorkQueues.exchange.topic;
@@ -112,7 +110,7 @@ public class Consumer01 {
 }
 ```
 
-消费者Consumer02：
+## 消费者Consumer02
 
 ```java
 package mode2_WorkQueues.exchange.topic;
@@ -147,6 +145,8 @@ public class Consumer02 {
     }
 }
 ```
+
+## 测试
 
 然后我们运行测试，当发送者发送我们指定当那些消息后：
 

@@ -16,7 +16,7 @@
 
 ![img_12.png](img_12.png)
 
-生产者：
+## 生产者Producer
 
 ```java
 package mode2_WorkQueues.exchange.direct;
@@ -52,7 +52,7 @@ public class Producer {
 }
 ```
 
-消费者1：
+## 消费者Consumer01
 
 ```java
 package mode2_WorkQueues.exchange.direct;
@@ -89,7 +89,7 @@ public class Consumer01 {
 }
 ```
 
-消费者2：
+## 消费者Consumer02
 
 ```java
 package mode2_WorkQueues.exchange.direct;
@@ -124,6 +124,8 @@ public class Consumer02 {
     }
 }
 ```
+
+## 测试
 
 然后分别启动`consumer01`、`consumer02`、`producer`进行测试：
 
