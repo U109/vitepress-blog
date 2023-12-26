@@ -49,6 +49,7 @@ export default [
             {
                 text: "消息队列",
                 items: [
+                    {text: "RabbitMQ", link: "/分布式/消息队列/RabbitMQ/MQ相关的概念/MQ的基本概念",},
                     {text: "常见问题", link: "/分布式/消息队列/常见问题/为什么使用消息队列",},
                 ],
             },
