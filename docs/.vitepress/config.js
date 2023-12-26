@@ -7,6 +7,7 @@ export default {
     title: 'ZBlog', //站点标题
     description: '张忠振的博客:Java、框架、数据库', //用于搜索引擎抓取摘要
     base: '/',
+    ignoreDeadLinks: true,
     head: [
         ['link', {rel: 'shortcut icon', type: "image/x-icon", href: `/index/小猪佩奇.png`}],
         ['link', {rel: 'preconnect', href: 'https://fonts.googleapis.com'}],
