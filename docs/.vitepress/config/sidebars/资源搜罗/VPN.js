@@ -1,5 +1,11 @@
 const VPN = [
     {
+        text: '如何使用',
+        items: [
+            {text: '如何使用', link: '/资源搜罗/VPN/如何使用'},
+        ],
+    },
+    {
         text: '一线机场',
         collapsed: true,
         items: [

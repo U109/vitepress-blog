@@ -100,7 +100,7 @@ export default [
         ],
     },
     {
-        text: "实战项目",
+        text: "Demo合集",
         items: [
             {
                 text: "Java",
@@ -139,21 +139,16 @@ export default [
                 items: [
                     {text: "IDEA远程Debug", link: "/开发技巧/框架配置/IDEA/IDEA远程Debug",},
                     {text: "VitePress博客", link: "/开发技巧/框架配置/VitePress/图片缩放功能",},
+                    {text: "ChatGPT", link: "/开发技巧/框架配置/ChatGPT/免费搭建ChatGPT网站",},
                 ],
             },
         ],
     },
-    {
-        text: "书籍下载",
-        items: [
-            {text: "Java", link: "/书籍下载/Java/Java",},
-            {text: "网络", link: "/书籍下载/网络/网络",},
-            {text: "数据库", link: "/书籍下载/数据库/数据库",},
-        ],
-    },
+
     {
         text: "资源搜罗",
         items: [
+            {text: "书籍下载", link: "/书籍下载/Java/Java",},
             {text: "机场", link: "/资源搜罗/VPN/机场",},
             {text: "音乐", link: "/资源搜罗/音乐/音乐",},
         ],
