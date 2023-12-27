@@ -8,21 +8,21 @@
 
 ### 缺点
 
-* 需要经常更换ChatGPT的Key，比较麻烦
+* 需要经常更换`ChatGPT`的Key，比较麻烦
 
 ## 搭建要求
 
 搭建这个ChatGPT网站需要一下几个网站和项目，所以请确保能正常访问：
 
-* [ChatGPT-Next-Web项目](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)：网站的壳子
+* [ChatGPT-Next-Web项目](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)：`ChatGPT`的壳子
 * [Vercel](https://vercel.com/)：云服务平台，用于部署
-* [水龙头](https://faucet.openkey.cloud/)：ChatGPT的key
+* [水龙头](https://faucet.openkey.cloud/)：`ChatGPT`的key和接口
 
 ## 搭建步骤
 
 ### 1、登录你的GitHub
 
-* 登录你的GitHub，然后Fork上面的`ChatGPT-Next-Web`项目到你的仓库：
+* 登录你的`GitHub`，然后`Fork`上面的`ChatGPT-Next-Web`项目到你的仓库：
 
 ![img_1.png](img_1.png)
 
@@ -36,23 +36,23 @@
 
 ### 2、登录Vercel
 
-* 访问Vercel，选择GitHub登录
+* 访问`Vercel`，选择`GitHub`登录
 
 ![img_4.png](img_4.png)
 
-* 选择Overview -> Add New -> Project
+* 选择`Overview -> Add New -> Project`
 
 ![img_5.png](img_5.png)
 
-* 导入刚才Fork的项目
+* 导入刚才`Fork`的项目
 
 ![img_6.png](img_6.png)
 
-* 直接Deploy，等待部署完成
+* 直接`Deploy`，等待部署完成
 
 ![img_7.png](img_7.png)
 
-* 部署完成后，可以看到你的网站已经部署成功了，点击Visit即可访问
+* 部署完成后，可以看到你的网站已经部署成功了，点击`Visit`即可访问
 
 ![img_8.png](img_8.png)
 
@@ -60,7 +60,7 @@
 
 ![img_9.png](img_9.png)
 
-因为我们还没有配置ChatGPT的Key，此时我们还不能正常使用。如果你已经有了ChatGPT的Key，可以直接配置。如果没有，请往下看。
+因为我们还没有配置`ChatGPT`的Key，此时我们还不能正常使用。如果你已经有了`ChatGPT`的Key，可以直接配置。如果没有，请往下看。
 
 ### 3、获取ChatGPT的Key
 
@@ -74,7 +74,7 @@
 
 ![img_11.png](img_11.png)
 
-* 返回到Vercel，进行Setting环境配置
+* 返回到`Vercel`，进行`Setting`环境配置
 
 ![img_12.png](img_12.png)
 
@@ -84,7 +84,7 @@
 
 根据项目`ChatGPT-Next-Web`的描述，可以看到相关的配置。我们一般只需要三个：
 
-* `OPENAI_API_KEY`：ChatGPT的Key，例如：`sk-XLtpmaADdsM8tpqDyiB2Io8EccjxUWIy3PFalaoh5HvX3MYp`
+* `OPENAI_API_KEY`：`ChatGPT`的Key，例如：`sk-XLtpmaADdsM8tpqDyiB2Io8EccjxUWIy3PFalaoh5HvX3MYp`
 * `BASE_URL`：接口地址，必须填写水龙头提供的接口：`https://openkey.cloud`
 * `CODE`：访问密码，如果你不想设置密码，当然可以
 
@@ -112,7 +112,7 @@
 
 * 前提是你已经购买了自己的域名
 
-可以在Setting -> Domains中进行配置，填写后直接进行Add，他会自动监测
+可以在`Setting -> Domains`中进行配置，填写后直接进行Add，他会自动监测
 
 ![img_18.png](img_18.png)
 

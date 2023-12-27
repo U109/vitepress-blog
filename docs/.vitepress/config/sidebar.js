@@ -49,6 +49,8 @@ export default {
             items: [
                 {text: '一、什么是JUC', link: '/Java/JUC/JUC并发包与容器类/什么是JUC'},
                 {text: '二、基本知识', link: '/Java/JUC/JUC并发包与容器类/基本知识'},
+                {text: '三、Lock锁', link: '/Java/JUC/JUC并发包与容器类/Lock锁'},
+                {text: '四、生产者消费者问题', link: '/Java/JUC/JUC并发包与容器类/生产者消费者问题'},
             ],
         }
     ],
