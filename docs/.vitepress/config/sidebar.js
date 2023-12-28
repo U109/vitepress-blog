@@ -16,14 +16,11 @@ export default {
     '/Java/Java/常见问题/': [
         {
             text: '前置知识',
-            items: [
-
-            ],
+            items: [],
         },
         {
             text: '单篇问题',
-            items: [
-            ],
+            items: [],
         },
         {
             text: '问题合集',
@@ -200,15 +197,6 @@ export default {
             ],
         }
     ],
-    '/开发技巧/坏味道/': [
-        {
-            text: '坏味道',
-            // collapsed: true,
-            items: [
-                {text: '降低代码可读性的12个技巧', link: '/开发秘籍/招式下三滥/降低代码可读性的12个技巧'},
-            ],
-        }
-    ],
     '/开发技巧/算法/常见算法': [
         {
             text: '较为常见的算法',
@@ -243,6 +231,23 @@ export default {
             text: 'ChatGPT',
             items: [
                 {text: '免费搭建ChatGPT网站', link: '/开发技巧/框架配置/ChatGPT/免费搭建ChatGPT网站'},
+            ],
+        }
+    ],
+    '/开发技巧/框架配置/IDEA/': [
+        {
+            text: 'IDEA',
+            items: [
+                {text: 'IDEA远程Debug', link: '/开发技巧/框架配置/IDEA/IDEA远程Debug'},
+            ],
+        }
+    ],
+    '/开发技巧/框架配置/安装手册/': [
+        {
+            text: '安装手册',
+            items: [
+                {text: 'Docker安装', link: '/开发技巧/框架配置/安装手册/Docker'},
+                {text: 'RabbitMQ安装', link: '/开发技巧/框架配置/安装手册/RabbitMQ'},
             ],
         }
     ],
