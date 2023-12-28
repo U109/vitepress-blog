@@ -4,7 +4,7 @@ layout: home
 title: ZBlog
 titleTemplate: 博客笔记
 hero:
-  name: 收罗万象的博客
+  name: 收集整理归档
   text: IT`S NOT A BUG
   tagline: 写写画画，自由自在
   image:
