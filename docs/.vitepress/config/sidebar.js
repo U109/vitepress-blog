@@ -252,6 +252,15 @@ export default {
         }
     ],
     '/实战项目/Netty/仿写微信IM即时通讯系统/': IMSystem,
+    '/实战项目/Java/数据库迁移/': [
+        {
+            text: '数据库迁移',
+            items: [
+                {text: '数据迁移方案', link: '/实战项目/Java/数据库迁移/数据迁移'},
+                {text: '数据迁移难点', link: '/实战项目/Java/数据库迁移/数据迁移难点'},
+            ],
+        }
+    ],
     '/实战项目/Java/监听MySQL的Binlog/': [
         {
             text: '监听MySQL的Binlog',
