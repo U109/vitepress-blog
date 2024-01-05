@@ -19,10 +19,10 @@ const MySQLQuestions = [
         items: [
             {
                 text: 'MySQL的索引为什么使用B+树而不是用跳表?',
-                link: '/数据库/MySQL/进阶问题/MySQL的索引为什么使用B+树而不是用跳表'
+                link: '/数据库/MySQL/常见问题/进阶问题/MySQL的索引为什么使用B+树而不是用跳表'
             }, {
                 text: 'MySQL一条查询语句的执行过程',
-                link: '/数据库/MySQL/进阶问题/MySQL一条查询语句的执行过程'
+                link: '/数据库/MySQL/常见问题/进阶问题/MySQL一条查询语句的执行过程'
             },
         ],
     }

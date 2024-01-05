@@ -186,7 +186,17 @@ export default {
     '/分布式/分布式事务/': DistributedTransactions,
     '/分布式/分布式锁/': DistributedLocks,
     '/数据库/书籍鉴赏/': HowDoesMySQLRun,
-    '/数据库/MySQL/': MySQLQuestions,
+    '/数据库/MySQL/常见问题/': MySQLQuestions,
+    '/数据库/MySQL/尚硅谷/': [
+        {
+            text: '尚硅谷面试题',
+            // collapsed: true,
+            items: [
+                {text: '大厂面试题', link: '/数据库/MySQL/尚硅谷/大厂面试题'},
+                {text: '笔试真题', link: '/数据库/MySQL/尚硅谷/笔试真题/笔试真题'},
+            ],
+        }
+    ],
     '/数据库/Redis/': Redis,
     '/数据库/GBase/开发技巧/': [
         {
