@@ -188,7 +188,7 @@ export default {
     '/数据库/书籍鉴赏/': HowDoesMySQLRun,
     '/数据库/MySQL/': MySQLQuestions,
     '/数据库/Redis/': Redis,
-    '/数据库/GBase/': [
+    '/数据库/GBase/开发技巧/': [
         {
             text: '开发技巧',
             // collapsed: true,

@@ -14,38 +14,25 @@ export default [
                 ],
             },
             {
-                text: "JUC",
-                items: [
-                    {text: "并发编程", link: "/Java/JUC/JUC并发包与容器类/内存可见性指令有序性理论",},
-                ],
+                text: "",items: [{text: "JVM", link: "/Java/JVM"}]
             },
             {
-                text: "JVM",
-                items: [
-                    {text: "深入浅出JVM", link: "/Java/JVM/深入浅出JVM/JVM内存结构",},
-                    {text: "常见问题", link: "/Java/JVM/常见问题/元空间会产生内存溢出么",}
-                ],
+                text: "",items: [{text: "JUC", link: "/Java/JUC"}]
             },
             {
-                text: "SpringBoot",
-                items: [
-                    {text: "常见问题", link: "/Java/SpringBoot/常见问题/SpringBoot概述相关问题",}
-                ],
+                text: "",items: [{text: "SpringBoot", link: "/Java/SpringBoot"}]
             },
             {
-                text: "Netty",
-                items: [
-                    {text: "常见问题", link: "/Java/Netty/常见问题/Netty理论相关问题",}
-                ],
+                text: "",items: [{text: "Netty", link: "/Java/Netty"}]
             },
         ],
     },
     {
         text: "分布式",
         items: [
-            {text: "思维导图", link: "/分布式/思维导图/三高系统",},
-            {text: "分布式锁", link: "/分布式/分布式锁/跨JVM的线程安全问题",},
-            {text: "分布式事务", link: "/分布式/分布式事务/一图解读分布式事务",},
+            {items: [{text: "思维导图", link: "/分布式/思维导图/三高系统",}],},
+            {items: [{text: "分布式锁", link: "/分布式/分布式锁",}],},
+            {items: [{text: "分布式事务", link: "/分布式/分布式事务",}],},
             {
                 text: "消息队列",
                 items: [
@@ -70,22 +57,15 @@ export default [
     {
         text: "数据库",
         items: [
+            {items: [{text: "GBase8s", link: "/数据库/GBase8s",}],},
             {
-                text: "GBase8s",
                 items: [
-                    {text: "开发技巧", link: "/数据库/GBase/开发技巧/查看执行计划",},
+                    {text: "MySQL", link: "/数据库/MySQL",},
                 ],
             },
             {
-                text: "MySQL",
                 items: [
-                    {text: "常见问题", link: "/数据库/MySQL/常见问题/基础",},
-                ],
-            },
-            {
-                text: "Redis",
-                items: [
-                    {text: "常见问题", link: "/数据库/Redis/常见问题/基本概念",},
+                    {text: "Redis", link: "/数据库/Redis",},
                 ],
             },
             {
