@@ -189,10 +189,19 @@ export default {
     '/数据库/MySQL/常见问题/': MySQLQuestions,
     '/数据库/MySQL/尚硅谷/': [
         {
-            text: '尚硅谷面试题',
+            text: '尚硅谷大厂面试题',
             // collapsed: true,
             items: [
-                {text: '大厂面试题', link: '/数据库/MySQL/尚硅谷/大厂面试题'},
+                {text: 'MySQL索引', link: '/数据库/MySQL/尚硅谷/面试题/MySQL索引'},
+                {text: 'MySQL架构', link: '/数据库/MySQL/尚硅谷/面试题/MySQL架构'},
+                {text: 'MySQL事务', link: '/数据库/MySQL/尚硅谷/面试题/MySQL事务'},
+                {text: 'MySQL开发', link: '/数据库/MySQL/尚硅谷/面试题/MySQL开发'},
+            ],
+        },
+        {
+            text: '笔试真题',
+            // collapsed: true,
+            items: [
                 {text: '笔试真题', link: '/数据库/MySQL/尚硅谷/笔试真题/笔试真题'},
             ],
         }
