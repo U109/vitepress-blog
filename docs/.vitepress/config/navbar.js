@@ -118,6 +118,7 @@ export default [
                 text: "应用配置",
                 items: [
                     {text: "IDEA", link: "/开发技巧/框架配置/IDEA/IDEA远程Debug",},
+                    {text: "Docker", link: "/开发技巧/框架配置/Docker/Docker修改镜像存储位置",},
                     {text: "VitePress博客", link: "/开发技巧/框架配置/VitePress/图片缩放功能",},
                     {text: "ChatGPT", link: "/开发技巧/框架配置/ChatGPT/免费搭建ChatGPT网站",},
                     {text: "安装手册", link: "/开发技巧/框架配置/安装手册/Docker",},

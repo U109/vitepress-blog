@@ -253,6 +253,14 @@ export default {
             ],
         }
     ],
+    '/开发技巧/框架配置/Docker/': [
+        {
+            text: 'Docker',
+            items: [
+                {text: 'Docker修改镜像存储位置', link: '/开发技巧/框架配置/Docker/Docker修改镜像存储位置'},
+            ],
+        }
+    ],
     '/开发技巧/框架配置/IDEA/': [
         {
             text: 'IDEA',
@@ -266,6 +274,7 @@ export default {
             text: '安装手册',
             items: [
                 {text: 'Docker安装', link: '/开发技巧/框架配置/安装手册/Docker'},
+                {text: 'Docker Desktop安装', link: '/开发技巧/框架配置/安装手册/DockerDesktop'},
                 {text: 'RabbitMQ安装', link: '/开发技巧/框架配置/安装手册/RabbitMQ'},
             ],
         }
