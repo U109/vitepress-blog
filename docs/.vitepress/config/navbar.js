@@ -83,6 +83,12 @@ export default [
         text: "Demo合集",
         items: [
             {
+                text: "代码片段",
+                items: [
+                    {text: "代码片段", link: "/实战项目/代码片段/代码片段",},
+                ],
+            },
+            {
                 text: "Java",
                 items: [
                     {text: "数据库迁移", link: "/实战项目/Java/数据库迁移/数据迁移",},
