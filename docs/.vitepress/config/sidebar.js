@@ -10,6 +10,7 @@ import Redis from "./sidebars/数据库/Redis/Redis";
 import DistributedLocks from "./sidebars/分布式/分布式锁/DistributedLocks";
 import DistributedTransactions from "./sidebars/分布式/分布式事务/DistributedTransactions";
 import RabbitMQ from "./sidebars/分布式/消息队列/RabbitMQ/RabbitMQ";
+import Spring from "./sidebars/源码拜读/Spring";
 
 export default {
     '/Java/Java/生产环境下性能监控与调优/': MonitoringAndTuning,
@@ -216,6 +217,7 @@ export default {
             ],
         }
     ],
+    '/源码拜读/Spring/':Spring,
     '/开发技巧/算法/常见算法': [
         {
             text: '较为常见的算法',
