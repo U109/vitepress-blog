@@ -6,7 +6,7 @@ titleTemplate: 博客笔记
 hero:
   name: 收集整理归档
   text: IT`S NOT A BUG
-  tagline: 写写画画，自由自在
+  tagline: 热爱生活，热爱工作
   image:
     src: /index/瑞克和莫蒂.png
     alt: zzz

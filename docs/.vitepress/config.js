@@ -40,7 +40,7 @@ export default {
         socialLinks: [
             // | 'discord'| 'facebook'| 'github'| 'instagram'| 'linkedin'| 'slack'| 'twitter'| 'youtube'
             { icon: 'twitter', link: 'https://twitter.com/StewardPeg5' },
-            {icon: 'github', link: 'https://github.com/U109'},
+            { icon: 'github', link: 'https://github.com/U109' },
         ],
         search: {
             provider: 'local',
@@ -57,7 +57,7 @@ export default {
         },
         footer: {
             message: "Released under the MIT License.",
-            copyright: "Copyright © 2022-04-23～present Zhen",
+            copyright: "Copyright © 2021-9-23～present Zhen",
         },
     },
 }

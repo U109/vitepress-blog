@@ -1,5 +1,11 @@
 const Spring = [
     {
+        text: '提示',
+        items: [
+            {text: '友情说明', link: '/源码拜读/Spring/提示'},
+        ],
+    },
+    {
         text: 'Spring源码环境准备',
         collapsed: true,
         items: [
