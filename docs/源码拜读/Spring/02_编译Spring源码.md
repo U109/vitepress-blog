@@ -134,6 +134,8 @@ pluginManagement {
 
 ![img_3.png](img_3.png)
 
+类似其他找不到包的问题，先试试上面的操作。例如：缺少 `org.springframework.objenesis`，就去找 `objenesisRepackJar`
+
 ### 4.2 InstrumentationSavingAgent 包下的类找不到
 
 修改 `spring-context.gradle`，改成 `api(project(":spring-instrument"))`
