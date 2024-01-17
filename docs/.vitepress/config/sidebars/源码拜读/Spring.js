@@ -13,7 +13,7 @@ const Spring = [
         collapsed: true,
         items: [
             {text: '（一）：启动流程概览', link: '/源码拜读/Spring/启动流程分析/启动流程概览'},
-            {text: '（二）：ApplicationContext的创建', link: '/源码拜读/Spring/启动流程分析/ApplicationContext的创建'},
+            {text: '（二）：启动流程 : this()', link: '/源码拜读/Spring/启动流程分析/启动流程分解一'},
         ],
     },
 ]
